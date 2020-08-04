@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="author" content="Suraj Porje">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            *
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+    
+            }
+            body
+            {
+                background-color: gray;
+            }
+            form
+            { border:none;
+              
+               width:600px;
+               height: 600px;
+               background-color:white;
+               
+               border-radius: 10px;
+               padding: 10px;
+               box-shadow: 0 0 10px 5px black;
+               margin: auto;
+
+
+               
+               top: 0;
+               right: 0;
+                left: 0;
+                bottom: 0;
+
+            }
+
+        
+    
+         
+          div.header
+          {
+            width:600px;
+               height: 40px;
+              background-color: black;
+               color: white;
+               align-items: center;
+               display: inline-block;
+              
+               
+          }
+          .header-b
+          {
+            width: 30px;
+              height: 30px;
+          }
+          img
+          {       
+              width: 20px;
+              height: 20px;
+                  align-self: baseline;
+          }
+          select.head-s
+          {
+              width: 150px;
+              height: 30px;
+              background-color: black;
+              color: white;
+              border: none;
+              appearance: none;
+              
+          }
+          .space
+          {
+            height: 100px;
+            background-color: rgb(199, 192, 192);
+            text-align: center;
+          }
+          .text-box
+          {
+              height: 50px;
+              background-color: honeydew;
+              text-align: center;
+          }
+          
+          div.body 
+          {
+              background-color: grey;
+          }
+
+          div.calc-body
+          {
+              display: inline-block;
+              margin: 5px;
+              border: none;
+              
+
+          }
+          
+          button
+          {
+              width: 50px;
+              height: 50px;
+          }
+          select
+          {
+            width: 100px;
+              height: 50px;
+          }
+         
+
+        </style>
+    </head>
+    <body>
+
+        <form>
+
+       
+      <div class="header">
+      
+      <center>
+        <select class="head-s" name="mode" >
+            <option selected value="1">Simple Mode </option>
+            <option value="2">Advanced Mode</option>
+            
+        </select> 
+      
+      </center>  
+          
+
+      </div>
+
+      <div class="space">
+          <h2>This is Space</h2>
+          
+      </div>
+      
+      <div class="text-box">
+          <textarea name="textarea" rows="2" cols="63" placeholder="This is a Text Box">  
+          </textarea>       
+      
+      </div>
+     
+      <div class="body"> 
+
+      <div class="calc-body" >
+
+        <select name="conversion">
+            <option value="1">Degrees</option>
+            <option value="2">Turn</option>
+            <option value="3">Radian</option>
+        </select>
+  
+        <span>  
+            to 
+          <select name="calc-body">
+              <option value="1">Degrees</option>
+              <option value="2">Turn</option>
+              <option value="3">Radian</option>
+          </select>
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+        <span>0 degrees = 0 radians</span>   
+
+
+
+
+
+
+
+        
+                    <button type="button"> ↓n</button>
+                    <button type="button"> ↑n</button>
+                    <button type="button"><sub style="font-size: 14px;"> x</sub>10<sup style="font-size: 14px;">y</sup> </button>
+                    <button type="button">mod</button>
+                    <button type="button"> ↩ </button>
+                    <button type="button">C</button>
+                    <button type="button">cos</button>
+                    <button type="button" style="width: 75px;"> sin</button>
+                    <button type="button" style="width: 75px;"> tan</button>
+
+
+      </div>
+      <div class="calc-body">
+          <button> 7</button>
+          <button>8</button>
+          <button> 9</button>
+          <button> ≑ </button>
+          <button> (</button>
+          <button> )</button>
+          <button> sinh </button>
+          <button style="width: 75px;" > cosh</button>
+          <button style="width: 75px;">tanh</button>
+      </div>
+      <div class="calc-body"> 
+      <button>4 </button>
+      <button> 5</button>
+      <button> 6</button>
+       <button> *</button> 
+      <select> 
+          <option value="1">x </option>
+          <option value="2">x<sup style="font-size: 14px;">2</sup></option>
+      </select>
+      <button> x<sup style="font-size: 14px;">-1</sup></button>
+      <button> x!</button>
+      <button> |x| </button>
+      <button> Arg</button>
+    </div>
+    <div class="calc-body">
+       
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+        <button>n</button>
+        <button>e</button>
+        <button>x<sup style="font-size: 14px;">y</sup></button>
+        <button>√ </button>
+        <button>log</button>
+        <button>ln</button>
+    </div>
+    <div class="calc-body"> 
+        <button>0</button>
+        <button>.</button>
+        <button>/</button>
+
+        <button> +</button>
+        <button>=</button>
+        <button>a*b</button>
+        <button>Re</button>
+        <button>lm</button>
+        <button>conj</button>
+        <select style="width: 50px;">
+            <option value="1"> f(x)</option>
+            <option value="2"> f(x<sup style="font-size: 14px;">y</sup>)</option>
+        </select>
+    
+
+
+    </div>
+
+</div>
+</form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
