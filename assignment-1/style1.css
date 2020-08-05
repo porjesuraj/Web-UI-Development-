@@ -1,0 +1,27 @@
+body {
+      
+  background-color: lightskyblue;
+  font-style: normal;
+  
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: whitesmoke;
+
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color:whitesmoke;
+}
+pre{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: teal;
+}
+table
+{
+    background-color:lightskyblue;
+}
