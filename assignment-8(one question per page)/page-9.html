@@ -1,0 +1,43 @@
+9. Write a program to accept a 5 digit number and check whether it is a numeric palindrome. (If
+reversed number is same as entered number it is called palindrome).
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <script>
+
+            function checkPalindrome(str)
+            {
+                flag = 0
+                for(let index = 1; index < str.length;index++)
+                {
+                    if(str[index - 1] == str[str.length - index])
+                    {
+                      
+                        flag++ 
+                    }
+                }
+                if(flag == 4)
+                {
+                    console.log(`string ${str} is a palindrome`)
+                }
+                else
+                {
+                    console.log(`string ${str} is not a palindrome`)
+                }
+
+            }
+            
+            checkPalindrome("pavap")
+            checkPalindrome("pavan")
+        </script>
+    
+    </body>
+</html>

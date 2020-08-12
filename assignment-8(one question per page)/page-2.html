@@ -1,0 +1,65 @@
+2. Write a program to accept a 4 digit number and
+a. Display face value of each decimal digit
+b. Display place value of each decimal digit
+c. Display no in reverse order by changing decimal place values
+If user enters a 4 digit number 9361 output should be
+a. 9 3 6 1
+b. 9361 = 9000 + 300 + 60 + 9
+c. 1639
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+
+        <script>
+         
+         function operations(number)
+         {
+             
+          
+                let temp = 0
+                let index = 0
+                const array = []
+                const place = []
+                console.log(` Display face value of each decimal digit`)
+             for(index = 0; index < 4;index++)
+             {
+                 temp = number % 10
+                
+                 array.push(parseInt(temp))
+                var number = number / 10
+             }
+             number = number * 10000
+             for(index = 3;index >= 0;index--)
+             {
+                 console.log(`${array[index]} `)
+             }
+
+          
+             console.log(`Display place value of each decimal digit`)
+            console.log(` ${number} = ${array[3]*1000} + ${array[2]*100} + ${array[1]*10} + ${array[0]}`)
+            
+
+            console.log(`Display no in reverse order by changing decimal place values`)
+            for(index = 0;index < 4;index++)
+             {
+                 console.log(`${array[index]} `)
+             }
+            
+         }
+
+
+
+        operations(1234)
+        operations(3698)
+
+        </script>
+    
+    </body>
+</html>

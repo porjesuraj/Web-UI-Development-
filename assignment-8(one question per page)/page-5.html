@@ -1,0 +1,50 @@
+5. Write a program to convert temperature in Celsius to Fahrenheit and vice versa. Formula for
+conversion is
+C=5/9 *( F-32).
+Note :- C =Celsius
+F= Fahrenheit
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+      <script>
+
+        function tempFtoC(F)
+        {
+            console.log(`temparature = ${F} F `)
+            console.log(`in degree celsius it is equal to `)
+
+            let C = 0
+
+            C = (5/9)*(F-32)
+
+            console.log(`temparature  = ${C} C `)
+
+        }
+        function tempCtoF(C)
+        {
+            console.log(`temparature = ${C} C`)
+            console.log(`in degree farenheit it is equal to `)
+
+            let F = 0
+
+            F = ((9/5)*C) + 32
+
+            console.log(`temparature  = ${F} F `)
+
+        }
+        tempFtoC(1)
+        tempCtoF(1)
+
+      </script>
+    
+    </body>
+</html>

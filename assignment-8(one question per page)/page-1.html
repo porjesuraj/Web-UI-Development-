@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        /* 
+        1. Write a program to Accept two numbers and
+a. find its sum.
+b. find its difference.
+c. find its product.
+        */
+
+        <script>
+           
+
+           function add()
+           {
+               console.log(arguments)
+               let sum = 0
+               for(let index = 0;index < arguments.length;index++)
+               {
+                   sum += arguments[index]
+               }
+               console.log(`addition of numbers = ${sum}`)
+
+           }
+
+           function substact()
+           {
+              console.log(arguments)
+              let sub = 0
+              for(let index = 0; index < arguments.length; index++)
+              {
+                  sub = arguments[index] - sub 
+              }
+              console.log(`substraction of numbers = ${sub} `)
+           }
+
+           function multiply()
+           {
+               console.log(arguments)
+               let mult = 1
+               for(let index = 0;index < arguments.length;index++)
+               {
+                  mult *= arguments[index]
+               }   
+               console.log(`multiplication of numbers = ${mult}`)
+            }
+
+           function execute(func)
+           {
+               console.log(`executing operations`)
+               func(10,20)
+               func(20,30,40)
+              
+           }
+
+           
+           execute(add)
+           execute(substact)
+           execute(multiply)
+
+
+
+        </script>
+    
+    </body>
+</html>
