@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment- 9 : Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--<link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap.css"> -->   
+
+        <style>
+           *
+           {
+               font-family: Arial, Helvetica, sans-serif;
+               font-size: 18px;
+               font-weight: bold;
+               
+           }
+           div.container
+           {
+               position: relative;
+               width: 100%;
+             
+           }
+           div.form-calculator
+           {
+               position: absolute;
+               left: 30%;
+               align-self: center;
+               margin: auto;
+               padding: 0px;
+
+               border: 1px black solid;
+               background-color: darkslateblue;
+
+               
+
+           }
+           .form-group
+           {
+               padding: 10px;
+              text-align: center;
+              margin-bottom: 30px;
+              padding: 20px;
+              
+           }
+           input
+           {
+              border: 2px springgreen solid;
+              border-radius: 10px;
+              color:black;
+    
+                  
+           }
+          
+          
+           label
+           {
+              padding: 5px;
+              color: lightyellow;
+           }
+          
+           h1
+           {
+               color: tomato;
+               text-align: center;
+               border-bottom: 5px white solid;
+               
+           }
+           ::placeholder
+           {
+               color: slategrey;
+               text-shadow: 1px 1px 0 yellow ;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+               
+        <div class="form-calculator">
+                <h1>Calculator</h1>
+         <div class="form-group">
+             <label for="bill"> How much was your bill?</label> <br>
+             <input type="number" id="bill" placeholder="Enter Amount"> <span  > ₹ </span>
+            </div>
+                <div class="form-group">
+                <label for="tip"> Tip to Waiter</label>  <br>
+               
+                <input type="number" id="tip" placeholder="Ener Amount" >  <span >₹</span>
+                </div>
+                <div class="form-group">
+                <label for="share"> How many People Sharing the Bill</label> <br>
+                
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                <input type="number" id="share" placeholder="Number Of People"> <span  >People</span>
+                </div>  
+                <div class="form-group">
+                    <button class="" id="calculate" onclick="calculateContribution()"> Calculate</button>
+                </div>
+
+                <div class="form-group">
+                    <label for=""> Contribution per Person</label>
+                    <input readonly type="number" id="result">
+                    <span >₹</span></div>
+                </div>
+
+        </div>
+
+        </div>
+
+       <script>
+           function calculateContribution()
+           {
+              
+              const bill = parseFloat(document.getElementById(`bill`).value ) 
+              const tipAmount = parseFloat(document.getElementById(`tip`).value) 
+              const totalPeople = parseFloat(document.getElementById('share').value) 
+              let result = (bill + tipAmount)/totalPeople;
+              
+            
+            
+            const contribution = document.getElementById('result').value=result;
+
+ 
+           }
+       </script>
+    
+    </body>
+</html>
