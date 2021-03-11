@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats</title>
+
+  <style>
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .product {
+      position: relative;
+      border: gray 2px solid;
+      width: 300px;
+      height: 450px;
+      text-align: center;
+      overflow: hidden;
+      display: inline-block;
+      margin: 10px;
+      box-shadow: 0 0 10px 1px #080808;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .product:hover {
+      transform: scale(1.2);
+    }
+
+    .product img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .product .title {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .product .description {
+      margin: 10px;
+      font-size: 18px;
+      color: gray;
+    }
+
+    .product .price {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .product .ribbon {
+      background-color: red;
+      color: white;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px black;
+      width: 200px;
+      box-shadow: 0 0 10px 1px #080808;
+    }
+
+    .product .ribbon-right {
+      transform: rotate(45deg);
+      position: absolute;
+      right: -50px;
+      top: 30px;
+    }
+
+    .product .ribbon-left {
+      transform: rotate(-45deg);
+      position: absolute;
+      left: -50px;
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="product">
+    <div class="ribbon ribbon-left">Popular</div>
+    <img src="images/cat.1.jpg" alt="">
+    <div class="title">Cat 1</div>
+    <div class="description">This is a nice cat. Blah blah blah blah blah blah blah....</div>
+    <div class="price">INR 10000</div>
+  </div>
+
+  <div class="product">
+    <img src="images/cat.2.jpg" alt="">
+    <div class="title">Cat 2</div>
+    <div class="description">This is a nice cat. Blah blah blah blah blah blah blah....</div>
+    <div class="price">INR 20000</div>
+  </div>
+
+  <div class="product">
+    <div class="ribbon ribbon-left">Popular</div>
+    <img src="images/cat.3.jpg" alt="">
+    <div class="title">Cat 3</div>
+    <div class="description">This is a nice cat. Blah blah blah blah blah blah blah....</div>
+    <div class="price">INR 30000</div>
+  </div>
+
+  <div class="product">
+    <img src="images/cat.4.jpg" alt="">
+    <div class="title">Cat 4</div>
+    <div class="description">This is a nice cat. Blah blah blah blah blah blah blah....</div>
+    <div class="price">INR 40000</div>
+  </div>
+
+</body>
+</html>

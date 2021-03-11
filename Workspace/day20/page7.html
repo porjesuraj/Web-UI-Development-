@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page7</title>
+</head>
+<body>
+
+  <script>
+
+    // int array[5];
+
+    function function1() {
+      // empty array declaration
+      const numbers = []
+
+      // console.log(numbers)
+
+      // append a value to the array
+      numbers.push(10)
+      numbers.push(20)
+      numbers.push(30)
+      numbers.push(40)
+      numbers.push(50)
+
+      console.log(numbers)
+
+      // remove the last value
+      // numbers.pop()
+      // numbers.pop()
+      // console.log(numbers)
+
+      // remove a value at an index
+      numbers.splice(2, 1)
+      console.log(numbers)
+
+      // traditional for..loop
+      // for (let index = 0; index < numbers.length; index++) {
+      //   console.log(`value at ${index} = ${numbers[index]}`)
+      // }
+
+      numbers.splice(0, numbers.length)
+      console.log(numbers)
+    }
+
+    function1()
+
+  </script>
+  
+</body>
+</html>

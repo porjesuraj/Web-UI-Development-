@@ -1,0 +1,2 @@
+
+1. Decorate all Previous Assignments using inline or internal CSS.All Assignments should be attractive.

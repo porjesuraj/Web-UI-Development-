@@ -1,0 +1,11 @@
+<!DOCTYPE person [
+  <!ELEMENT person (phone)>
+  <!ELEMENT phone (#PCDATA)>
+
+  <!ATTLIST phone 
+      provider CDATA
+      model CDATA >
+]>
+<person>
+  <phone provider="airtel" model="iPhone">+9234345</phone>
+</person>

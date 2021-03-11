@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <script>
+            function fun1(p1)
+            {
+                console.log('inside the function-1')
+                console.log(p1)
+                console.log(`type of p1 = ${typeof(p1)}`)
+                console.log(`calling p1`)
+               p1()
+        
+            }
+        
+            //fun1(10)
+           // fun1("test")
+            //fun1(true )
+
+
+            function fun2()
+            {
+                console.log('inside the function')
+
+
+            }
+
+            const myFun2 = fun2
+
+
+            myFun2()
+            fun2()
+
+            console.log(`type of fun2 = ${typeof(fun2)}`)
+            console.log(`type of fun2 = ${typeof(myFun2)}`)
+
+            fun1(fun2)
+            fun1(myFun2)
+            //we can pass a function as an argument as a parameter to function 
+
+
+
+
+
+
+
+
+        </script>
+    
+    </body>
+</html>

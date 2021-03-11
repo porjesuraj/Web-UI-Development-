@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Function Alias</h1>
+
+        <script>
+
+            function fun1()
+            {
+
+       let num1 = 100
+       let num2 = num1
+
+       console.log(`num1 = ${num1}, type = ${typeof(num1)}`)
+       console.log(`num2 = ${num2}, type = ${typeof(num2)}`)
+           num1 = 300
+         console.log(`after changing num1 value`)
+           console.log(`num1 = ${num1}, type = ${typeof(num1)}`)
+       console.log(`num2 = ${num2}, type = ${typeof(num2)}`)
+  
+    }
+
+    function fun2()
+    {
+        console.log(`inside the function`)
+
+    }
+
+    console.log(fun2)
+    console.log(`type of function fun2 = ${typeof(fun2)}`)
+
+    const myfunction1 = 100
+    console.log(myfunction1)
+    console.log(`type of myfunction1 = ${typeof(myfunction1)}`)
+        
+    //function alias
+    const myFunction2 = fun2 
+    myFunction2()
+    console.log(`type of myFunction2 = ${typeof(myFunction2)}`)
+
+
+
+        </script>
+    
+    </body>
+</html>

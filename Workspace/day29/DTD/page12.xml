@@ -1,0 +1,9 @@
+<!DOCTYPE person [
+  <!ELEMENT person (phone)>
+  <!ELEMENT phone (#PCDATA)>
+
+  <!ATTLIST phone provider CDATA #REQUIRED>
+]>
+<person>
+  <phone provider="airtel">+9234345</phone>
+</person>

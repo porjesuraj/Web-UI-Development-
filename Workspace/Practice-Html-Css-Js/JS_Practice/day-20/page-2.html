@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+         <div class="row">  
+
+        <div class="col-md-3"> 
+            <ul class="list-group">
+
+                <li class="list-group-item"> lost item 1</li>
+                <li class="list-group-item"> lost item 2</li>
+                <li class="list-group-item"> lost item 3</li>
+                <li class="list-group-item"> lost item 4</li>
+                <li class="list-group-item"> lost item 5</li>
+            </ul>
+        </div>
+        <button onclick="activeListItem(0)" class="btn btn-success"> list item-1 </button onclick="activeListItem()">
+        <button onclick="activeListItem(1)" class="btn btn-success"> list item-2 </button onclick="activeListItem()">
+        <button onclick="activeListItem(2)" class="btn btn-success"> list item-3 </button onclick="activeListItem()">
+        <button onclick="activeListItem(3)" class="btn btn-success"> list item-4 </button onclick="activeListItem()">
+        <button onclick="activeListItem(4)" class="btn btn-success"> list item-5 </button onclick="activeListItem()">
+        <div class="col-md-9">
+
+        </div>
+
+        </div>
+        </div>
+    <script>
+
+        function activeListItem(index)
+        {
+            const items = document.getElementsByTagName('li')
+            for(let itemIndex = 0;itemIndex < items.length;itemIndex++)
+            {
+                items[itemIndex].classList.remove('active')
+
+            }
+            items[index].classList.add('active')
+
+        }
+    </script>
+    </body>
+</html>

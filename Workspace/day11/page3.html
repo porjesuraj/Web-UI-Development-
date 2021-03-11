@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    p ~ span {
+      color: red;
+    }
+
+    div ~ span {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>General Sibling Selector Demo</h1>
+
+  <span>this is span before para</span>
+
+  <p>this is para</p>
+  <span>this is span after para 1</span>
+  <span>this is span after para 2</span>
+  <div>this is a div</div>
+  <span>this is span after div 1</span>
+  <span>this is span after div 2</span>
+
+  <ul>
+    <li>
+      <span>this is span after ul li 1</span>
+      <span>this is span after ul li 2</span>
+    </li>
+    <li>
+      <div>thsi is another div</div>
+      <span>this is span after ul li 1</span>
+      <span>this is span after ul li 2</span>
+    </li>
+  </ul>
+
+</body>
+</html>

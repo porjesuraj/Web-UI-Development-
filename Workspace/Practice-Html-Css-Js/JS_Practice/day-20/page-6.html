@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page6</title>
+  <style>
+    .bike {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="bike" class="bike" src="food-delivery.png" alt="">
+
+  <br>
+  <button onclick="animateBike()">animate</button>
+  
+  <script>
+
+    let distance = 0
+    let direction = 'right'
+
+    function animateBike() {
+      setInterval(moveBike, 10)
+    }
+
+    function moveBike() {
+      const bike = document.getElementById('bike')
+      bike.style.transform = `translatex(${distance}px)`
+
+      if (distance >= window.innerWidth) {
+        direction = 'left'
+        bike.src = 'food-delivery.png'
+      } else if (distance <= 0){
+        direction = 'right'
+        bike.src = 'food-delivery.png'
+      }
+
+      if (direction == 'right') {
+        distance += 5
+      } else {
+        distance -= 5
+      }
+    }
+
+  </script>
+</body>
+</html>
+
+            

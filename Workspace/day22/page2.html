@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page2</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Products listing</h1>
+
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="list-group">
+          <li class="list-group-item">Electronics</li>
+          <li class="list-group-item">Home Decore</li>
+          <li class="list-group-item">Cars</li>
+          <li class="list-group-item">Bikes</li>
+          <li class="list-group-item">Mobiles</li>
+          <li class="list-group-item">Computers</li>
+          <li class="list-group-item">Fashion</li>
+        </ul>
+
+        <div class="btn-toolbar">
+          <div class="btn-group">
+            <button onclick="activateListItem(0)" class="btn btn-default">1</button>
+            <button onclick="activateListItem(1)" class="btn btn-default">2</button>
+            <button onclick="activateListItem(2)" class="btn btn-default">3</button>
+            <button onclick="activateListItem(3)" class="btn btn-default">4</button>
+            <button onclick="activateListItem(4)" class="btn btn-default">5</button>
+            <button onclick="activateListItem(5)" class="btn btn-default">6</button>
+            <button onclick="activateListItem(6)" class="btn btn-default">7</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-9"></div>
+    </div>
+
+    
+  </div>
+
+  <script>
+
+    let lastActiveItem = 0
+
+    function activateListItem(index) {
+      const items = document.getElementsByTagName('li')
+
+      // deactivate all the other list items
+      for (let itemIndex = 0; itemIndex < items.length; itemIndex++) {
+        items[itemIndex].classList.remove('active')
+      }
+
+      // // deactivate the last selected item
+      // items[lastActiveItem].classList.remove('active')
+      
+      // make the indexth list item active
+      items[index].classList.add('active')
+
+      // // set the current active item
+      // lastActiveItem = index
+    }
+
+  </script>
+
+</body>
+</html>

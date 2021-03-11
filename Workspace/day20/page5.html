@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page5</title>
+</head>
+<body>
+
+  <script>
+
+    function add(p1, p2) {
+      console.log(`p1 + p2 = ${p1 + p2}`)
+    }
+
+    function subtract(p1, p2) {
+      console.log(`p1 - p2 = ${p1 - p2}`)
+    }
+
+    // add(10, 20)
+
+    function execute(func) {
+      // func = subtract
+      console.log(func)
+      console.log(`type of func = ${typeof(func)}`)
+
+      // call the function
+      func(30, 40)
+    }
+
+    // execute(add)
+    execute(subtract)
+
+  </script>
+  
+</body>
+</html>

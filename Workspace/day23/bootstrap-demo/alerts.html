@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alerts</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+  <div class="container">
+    <h1>bootstrap demo</h1>
+    <h2>alert demo</h2>
+
+
+    <div class="alert alert-primary">
+      this is alert primary
+    </div>
+    <div class="alert alert-info">
+      this is alert info
+    </div>
+    <div class="alert alert-success">
+      this is alert success
+    </div>
+    <div class="alert alert-warning">
+      this is alert warning
+    </div>
+    <div class="alert alert-danger">
+      this is alert danger
+    </div>
+    <div class="alert alert-default">
+      this is alert default
+    </div>
+    <div class="alert alert-dark">
+      this is alert daalert-dark
+    </div>
+
+     <button onclick="showAlert()" class="btn btn-primary">show alert</button>
+     <button onclick="hideAlert()" class="btn btn-primary">hide alert</button>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script>
+
+    function showAlert() {
+      $('.alert').alert()
+    }
+
+    function hideAlert() {
+      $('.alert').alert('close')
+    }
+
+  </script>
+</body>
+</html>

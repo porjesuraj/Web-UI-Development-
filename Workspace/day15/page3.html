@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page3</title>
+
+  <style>
+
+    /* animation definition */
+    @keyframes move-cloud1 {
+      from { transform: translateX(-100px); }
+      to { transform: translateX(800px);}
+    }
+
+    @keyframes move-cloud2 {
+      from { transform: translateX(-300px); }
+      to { transform: translateX(750px);}
+    }
+
+    @keyframes move-cloud3 {
+      from { transform: translateX(-10px); }
+      to { transform: translateX(850px);}
+    }
+
+    @keyframes move-cloud4 {
+      from { transform: translateX(-10px); }
+      to { transform: translateX(850px);}
+    }
+
+    @keyframes move-rider-from-left-to-right {
+      from { transform: translateX(-100px);}
+      to { transform: translateX(900px);}
+    }
+
+    @keyframes move-rider-from-right-to-left {
+      from { transform: translateX(0px);}
+      to { transform: translateX(-950px);}
+    }
+
+
+    body {
+      background-color: skyblue;
+      padding: 0;
+      margin: 0;
+    }
+
+    .cloud {
+      transition: all 1s;
+      position: absolute;
+    }
+
+    .cloud1 { 
+      width: 200px;
+      top: 0;
+      left: 0; 
+      animation-name: move-cloud1;
+      animation-duration: 16s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .cloud2 {
+      width: 300px;
+      top: 50px;
+      left: 0; 
+      animation-name: move-cloud2;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .cloud3 {
+      width: 100px;
+      top: 20px;
+      left: 0; 
+      animation-name: move-cloud3;
+      animation-duration: 18s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .cloud4 {
+      width: 150px;
+      top: 100px;
+      left: 0; 
+      animation-name: move-cloud4;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .road {
+      position: absolute;
+      bottom: 0;
+      background-color: gray;
+      height: 250px;
+      width: 100%;
+    }
+
+    hr.divider {
+      border: dashed 5px white;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+    }
+
+    .trees {
+      position: absolute;
+      background-color: green;
+      bottom: 250px;
+      width: 100%;
+      height: 300px;
+    }
+    
+    .rider {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .right {
+      bottom: 50px;
+      animation-name: move-rider-from-left-to-right;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    .right1 { animation-delay: 1s; }
+    .right2 { animation-delay: 2s; }
+    .right3 { animation-delay: 3s; }
+    .right4 { animation-delay: 4s; }
+    .right5 { animation-delay: 5s; }
+
+    .left {
+      bottom: 150px;
+      right: 0;
+      animation-name: move-rider-from-right-to-left;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+
+    @keyframes message-animation {
+      from { 
+        transform: translateX(0);
+        color: white;
+      }
+      to {
+        transform: translateX(600px); 
+        color: red;
+      }
+    }
+
+    .message {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+
+      animation-name: message-animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes heart-beat {
+      from { transform: scale(1); }
+      to { transform: scale(1.5); }
+    }
+
+    .heart {
+      width: 100px;
+      height: 100px;
+      margin: 50px;
+
+      animation-name: heart-beat;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+  </style>
+</head>
+<body>
+  <img src="images/heart.png" alt="" class="heart">
+
+  <img src="images/cloud.png" alt="" class="cloud cloud1">
+  <img src="images/cloud.png" alt="" class="cloud cloud2">
+  <img src="images/cloud.png" alt="" class="cloud cloud3">
+  <img src="images/cloud.png" alt="" class="cloud cloud4">
+
+  <div class="trees">
+    <div class="message">Stay Home Stay Safe</div>
+  </div>
+
+  <div class="road">
+    <hr class="divider">
+  </div>
+
+  <img class="rider right" src="images/delivery-man.png" alt="">
+  <img class="rider right right1" src="images/delivery-man.png" alt="">
+  <img class="rider right right2" src="images/delivery-man.png" alt="">
+  <img class="rider right right3" src="images/delivery-man.png" alt="">
+  <img class="rider right right4" src="images/delivery-man.png" alt="">
+  <img class="rider right right5" src="images/delivery-man.png" alt="">
+  <img class="rider right right6" src="images/delivery-man.png" alt="">
+
+  <img class="rider left" src="images/delivery-man-left.png" alt="">
+</body>
+</html>

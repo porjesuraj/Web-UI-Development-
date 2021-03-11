@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ribbon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    <style>
+         .movie
+         {
+             background-color: grey;
+             width: 300px;
+             height: 400px;
+             position: relative;
+             overflow: hidden;
+             display: inline-block;
+             margin: 20px;
+         }
+         .ribbon
+         {
+             background-color:rgb(248, 44, 8);
+             color: white;
+             text-align: center;
+             height: 40px;
+             line-height:40px;
+             font-weight: bold;
+             text-shadow: 1px 1px 5px #000;
+             box-shadow: 0 0 10pxpx 1pxpx rgb(7, 119, 22);
+            
+         }
+         .ribbon-right
+         {
+           transform: rotate(45deg);
+           position: absolute;
+           top: 30px;
+           right: -50px;
+           width: 200px;
+         }
+         .ribbon-left
+         {
+            transform: rotate(-45deg);
+           position: absolute;
+           top: 10px;
+           left: -50px;
+           width: 150px;
+         }
+
+    </style>
+    
+    </head>
+    <body>
+        <h1>
+             Ribbon
+        </h1>
+        <div class="movie">
+         <div class="ribbon ribbon-right " > Action
+        </div>
+        </div> 
+
+
+        <div class="movie">
+            <div class="ribbon ribbon-left " > Action
+           </div>
+           </div> 
+
+           <div class="movie">
+            <div class="ribbon ribbon-right " > Action
+           </div>
+           </div> 
+
+           <div class="movie">
+            <div class="ribbon ribbon-left " > Action
+           </div>
+           </div> 
+    
+    </body>
+</html>

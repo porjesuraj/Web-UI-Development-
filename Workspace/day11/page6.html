@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    p {
+      font-size: 20px;
+    }
+
+    p::first-line {
+      background-color: yellow;
+    }
+
+    p::first-letter {
+      font-family: Arial;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    div {
+      font-size: 20px;
+    }
+
+    div::before {
+      content: '-> ';
+    }
+
+    div::after {
+      content: ' <-';
+    }
+
+    input::placeholder {
+      color: red;
+      font-family: arial;
+    }
+
+    a:visited {
+      color: lightgray;
+    }
+
+    a {
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Pseudo Selector -> Pseudo element</h1>
+
+  <input type="text" placeholder="enter name">
+  
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+  </p>
+
+  <div>this is a div 1</div>
+  <div>this is a div 2</div>
+  <div>this is a div 3</div>
+  <div>this is a div 4</div>
+  <div>this is a div 5</div>
+  <div>this is a div 5</div>
+  <div>this is a div 5</div>
+  <div>this is a div 5</div>
+  <div>this is a div 5</div>
+  <div>this is a div 5</div>
+  
+  <a href="https://google.co.in">Google</a>
+  <a href="https://dummy.test.com">Dummy URL</a>
+  
+</body>
+</html>

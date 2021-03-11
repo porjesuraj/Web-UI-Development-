@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page5</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+  <style>
+
+    #user-info {
+      font-size: 20px;
+      border: 3px black solid;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <!-- get input from user -->
+    <div class="col-md-6">
+      <h2>User Registration Form</h2>
+
+      <div class="form">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" class="form-control" id="last-name">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Birth Date</label>
+          <input type="date" class="form-control" id="birthdate">
+        </div>
+        <div class="form-group">
+          <button onclick="registerUser()" class="btn btn-success">Register</button>
+          <button onclick="clearForm()" class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- render user deatils -->
+    <div class="col-md-6">
+      <h2>User Details</h2>
+      <div id="user-info"></div>
+    </div>
+  </div>
+
+  <script>
+
+    function clearForm() {
+      document.getElementById('first-name').value = ''
+      document.getElementById('last-name').value = ''
+      document.getElementById('phone').value = ''
+      document.getElementById('email').value = ''
+      document.getElementById('birthdate').value = ''
+    }
+
+    function registerUser() {
+      const firstName = document.getElementById('first-name').value
+      const lastName = document.getElementById('last-name').value
+      const phone = document.getElementById('phone').value
+      const email = document.getElementById('email').value
+      const birthDate = document.getElementById('birthdate').value
+
+      document.getElementById('user-info').innerHTML = `
+        <strong>First Name</strong>: ${firstName} <br>
+        <strong>Last Name</strong>: ${lastName} <br>
+        <strong>Phone Number</strong>: ${phone} <br>
+        <strong>Email Address</strong>: ${email} <br>
+        <strong>Birth Date</strong>: ${birthDate}
+      `
+    }
+
+  </script>
+</body>
+</html>

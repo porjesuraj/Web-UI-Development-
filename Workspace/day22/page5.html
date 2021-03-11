@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    .box {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      margin: 50px;
+    }
+    
+    .box-updated {
+      background: linear-gradient(to right, red, yellow);
+      box-shadow: 0 0 10px 2px black;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div id="box" class="box"></div>
+
+  <button onclick="updateBoxAppearance()">update box</button>
+  <button onclick="animateBox()">animate box</button>
+
+  <script>
+
+    let rotation = 10
+
+    function animateBox() {
+      setInterval(rotateBox, 10)
+    }
+
+    function rotateBox() {
+      console.log(`rorating by ${rotation} angle`)
+      if (rotation > 360) {
+        rotation = 0
+      }
+      const box = document.getElementById('box')
+      // box.style.width = '110px'
+      // box.style.height = '110px'
+      box.style.transform =  `rotate(${rotation}deg)`
+      rotation += 1
+    }
+
+    function updateBoxAppearance() {
+      setTimeout(changeBoxClass, 5000)
+    }
+
+    function changeBoxClass() {
+      const box = document.getElementById('box')
+      box.classList.add('box-updated')
+    }
+
+  </script>
+</body>
+</html>

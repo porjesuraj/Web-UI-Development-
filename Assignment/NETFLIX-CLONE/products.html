@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <style>
+
+    div.product {
+      border: solid black;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    div.product img {
+      width: 100%;
+      height: 180px;
+    }
+
+    div.title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body onload="loadProducts()">
+  <div class="container">
+    <h1>Products</h1>
+
+    <h5>Motherbords</h5>
+    <div class="row" id="motherboards">
+    </div>
+
+    <h5>RAM</h5>
+    <div class="row" id="rams">
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+
+    function loadProducts() {
+
+      const motherboards = [
+        {
+          "thumbnail": "https://images-eu.ssl-images-amazon.com/images/I/512jBdNNpAL._AC_SX368_.jpg",
+          "title": "ASRock H310M-HDV LGA1151/Intel",
+          "company": "ASRock",
+          "price": "7500"
+        },
+        {
+          "thumbnail": "https://images-eu.ssl-images-amazon.com/images/I/51nSQ8lGI-L._AC_SX368_.jpg",
+          "title": "ASUS Prime H310M-E LGA1151",
+          "company": "ASUS",
+          "price": "5350"
+        },
+        {
+          "thumbnail": "https://images-eu.ssl-images-amazon.com/images/I/517VyfdE+eL._AC_SX368_.jpg",
+          "title": "MSI H310M PRO-VH S1151 PCIE",
+          "company": "MSI",
+          "price": "5600"
+        }
+      ]
+
+      
+      let products = ''
+      for (let index = 0; index < motherboards.length; index++) {
+        const product = motherboards[index]
+        // console.log(`thumbnail = ${product["thumbnail"]}`)
+        // console.log(`title = ${product["title"]}`)
+        // console.log(`company = ${product["company"]}`)
+        // console.log(`price = ${product["price"]}`)
+
+        products += `
+          <div class="product col-md-3">
+            <img src="${product["thumbnail"]}" alt="">
+            <div class="title">${product["title"]}</div>
+            <div class="company text-black-50">${product["company"]}</div>
+            <div class="price text-black-50">INR ${product["price"]}</div>
+          </div>
+        `
+      }
+
+      $('#motherboards').html(products)
+
+
+      const rams = [
+        {
+          "thumbnail": "https://images-eu.ssl-images-amazon.com/images/I/41zySoEDZAL._AC_SX368_.jpg",
+          "title": "Crucial CB4GU2400 4GB 2400Mhz",
+          "company": "Crucial",
+          "price": "1800"
+        },
+        {
+          "thumbnail": "https://images-eu.ssl-images-amazon.com/images/I/51wkZwJxuPL._AC_SX368_.jpg",
+          "title": "TRANSCEND 4GB DDR4 2666Mhz",
+          "company": "TRANSCEND",
+          "price": "2499"
+        },
+        {
+          "thumbnail": "https://images-eu.ssl-images-amazon.com/images/I/41-MH3nm7pL._AC_SX368_.jpg",
+          "title": "ADATA Premier Memory 4GB",
+          "company": "ADATA",
+          "price": "1949"
+        }
+      ]
+      let ramProducts = ''
+      for (let index = 0; index < rams.length; index++) {
+        const product = rams[index]
+        // console.log(`thumbnail = ${product["thumbnail"]}`)
+        // console.log(`title = ${product["title"]}`)
+        // console.log(`company = ${product["company"]}`)
+        // console.log(`price = ${product["price"]}`)
+
+        ramProducts += `
+          <div class="product col-md-3">
+            <img src="${product["thumbnail"]}" alt="">
+            <div class="title">${product["title"]}</div>
+            <div class="company text-black-50">${product["company"]}</div>
+            <div class="price text-black-50">INR ${product["price"]}</div>
+          </div>
+        `
+      }
+
+      $('#rams').html(ramProducts)
+    }
+
+  </script>
+
+</body>
+</html>

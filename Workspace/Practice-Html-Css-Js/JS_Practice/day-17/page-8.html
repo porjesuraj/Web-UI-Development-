@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>collection demo</h1>
+
+    <script>
+
+        function fun1()
+        {
+            const number =[10,20,30,40,50,60,70,80]
+            //console.log(number)
+            //traditional for loop
+            for(let index = 0;index < number.length;index++)
+            {
+                  console.log(`value at ${index} = ${number[index]}`)
+            }
+              //properties
+             // console.log(`length = ${number.length}`)
+
+
+
+
+
+
+        }
+        fun1()
+
+        function fun2()
+        { // collection of string
+           const countries = ["india","USA","japan"]
+           console.log(countries)
+           countries.push("china")
+           //append chian to the end of collection
+           console.log(countries)
+           //remove the last country
+           countries.pop()
+           console.log(countries)
+        }
+        fun2()
+    </script>
+    </body>
+</html>

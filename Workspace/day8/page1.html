@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registration form</title>
+</head>
+<body>
+  <center>
+  
+    <h1>Registration</h1>
+
+    <form action="">
+
+      <table>
+
+        <tbody>
+
+          <tr>
+            <td>
+              <label for="full-name">Full Name</label>
+            </td>
+            <td>
+              <input required placeholder="enter full name" id="full-name" type="text"> <span>*</span>
+              <input type="button" value="help"> 
+              <div>this name will be used later to send a certificate</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input required placeholder="enter password" id="password" type="password"> <span>*</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="confirm-password">Confirm Password</label>
+            </td>
+            <td>
+              <input required placeholder="confirm password" id="confirm-password" type="password"> <span>*</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="birth-date">Birth Date</label>
+            </td>
+            <td>
+              <input required id="birth-date" type="date"> <span>*</span>
+              <div>this birth be used later for certificate generation</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="birth-time">Birth Time</label>
+            </td>
+            <td>
+              <input id="birth-time" type="time">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="age">Age</label>
+            </td>
+            <td>
+              <input readonly placeholder="enter age" id="age" type="number">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="address">Address</label>
+            </td>
+            <td>
+              <textarea maxlength="50" placeholder="enter full address" id="address" cols="30" rows="3"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>City</td>
+            <td>
+              <select multiple id="city">
+                <optgroup label="group1">
+                  <option value="1">Pune</option>
+                  <option value="3">Karad</option>
+                  <option selected value="4">Satara</option>
+                </optgroup>
+                <optgroup label="group2">
+                  <option value="2">Mumbai</option>
+                  <option value="5">Nashik</option>
+                  <option value="6">Other</option>
+                </optgroup>
+                
+              </select>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Gender
+            </td>
+            <td>
+              <input name="gender" id="radio-male" type="radio">
+              <label for="radio-male">Male</label>
+
+              <input checked name="gender" id="radio-female" type="radio">
+              <label for="radio-female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Favorite Languages</td>
+            <td>
+              <input checked id="lang-c" type="checkbox">
+              <label for="lang-c">C</label>
+
+              <input id="lang-cpp" type="checkbox">
+              <label for="lang-cpp">C++</label>
+
+              <input id="lang-java" type="checkbox">
+              <label for="lang-java">Java</label>
+
+              <input id="lang-html" type="checkbox">
+              <label for="lang-html">HTML</label>
+
+              <input id="lang-js" type="checkbox">
+              <label for="lang-js">JavaScript</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Resume</td>
+            <td>
+              <input accept="image/*" type="file">
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="register">
+              <input type="reset" value="clear">
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table>
+
+    </form>
+
+  </center>
+</body>
+</html>

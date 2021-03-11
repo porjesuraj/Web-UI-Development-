@@ -1,0 +1,4 @@
+<!DOCTYPE myElement [
+  <!ELEMENT myElement EMPTY>
+]>
+<myElement />

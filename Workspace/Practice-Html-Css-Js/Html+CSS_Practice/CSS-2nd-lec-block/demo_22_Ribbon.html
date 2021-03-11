@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ribbon-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    <style>
+
+        .product 
+        {
+            border: grey 2px solid;
+            width: 250px;
+            height: 450px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            margin: 10px;
+            background-color: white;
+        }
+        .product img 
+        {
+            width:300px;
+            height: 300px;
+        }
+       .product title
+        {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        .product .desc
+        {
+            margin: 10px;
+            font-size:18px;
+            color: grey;
+        }
+        .product .price
+        {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .product .ribbon
+        {
+            background-color:rgb(248, 44, 8);
+             color: white;
+             text-align: center;
+             height: 50px;
+             line-height:50px;
+             font-weight: bold;
+             text-shadow: 1px 1px 5px #000;
+            
+             box-shadow: 0 0 10px 1px #0bffeb;
+             width: 300px;
+
+        }
+        .product .ribbon-right
+        {
+           transform: rotate(45deg);
+           position: absolute;
+           width: 200px;
+           top: 10px;
+           right: -55px;
+        }
+        .product .ribbon-left
+        {
+           transform: rotate(-45deg);
+           position: absolute;
+           width: 200px;
+           top: 10px;
+           left: -55px;
+        }
+       
+            </style>
+     
+    
+    </head>
+    <body>
+        <div class="product">
+           
+            <div class="ribbon ribbon-right">Popular</div>
+            <img src="1.jpeg" alt="racoon">
+             <div class="title"> racoon-1</div>
+             <div class="desc"> this is a wild recoon</div>
+             <div class="price">INR 1000</div>
+        
+        </div>
+        <div class="product">
+           
+            <div class="ribbon">Popular</div>
+            <img src="2.jpeg" alt="racoon">
+             <div class="title"> racoon-2</div>
+             <div class="desc"> this is a wild recoon</div>
+             <div class="price">inr 1000</div>
+        
+        </div>
+        <div class="product">
+           
+            <div class="ribbon ribbon-left">Popular</div>
+            <img src="3.jpeg" alt="racoon">
+             <div class="title"> racoon-3</div>
+             <div class="desc"> this is a wild recoon</div>
+             <div class="price">inr 1000</div>
+        
+        </div>
+        <div class="product">
+           
+            <div class="ribbon ">Popular</div>
+            <img src="1.jpeg" alt="racoon">
+             <div class="title"> racoon-4 </div>
+             <div class="desc"> this is a wild recoon</div>
+             <div class="price">inr 1000</div>
+        
+        </div>
+
+    
+    </body>
+</html>

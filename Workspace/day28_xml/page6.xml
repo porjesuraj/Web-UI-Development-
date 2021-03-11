@@ -1,0 +1,13 @@
+<!-- <person>
+  <name>person1</name>
+  <address>pune</address>
+  <email>person1@test.com</email>
+</person> -->
+
+<!-- attribute only element -->
+<!-- <person name="person1" address="pune" email="person1@test.com"></person> -->
+
+<person 
+  name="person1"
+  address="pune"
+  email="person1@test.com" />

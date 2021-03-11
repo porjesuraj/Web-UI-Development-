@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body>
+
+            <h1>Functions Demo</h1>
+        <script>
+        
+        //para-less function declaration
+       // void function2(int param) {} --for c/c++
+        function fun2(param)
+        {
+            console.log('inside the function 2')
+            console.log(`param = ${param}, type of param = ${typeof(param)}`)
+        }
+        //function call
+        fun2(10)
+        fun2(10.60)
+        fun2("test")
+        fun2("test + 10")
+        fun2('10' + 10)
+        fun2(true )
+
+       function add(p1,p2)
+       {
+            const addition = p1 + p2 
+            console.log(`${p1} + ${p2} = ${p1 + p2}`)
+
+       }
+        //30
+        add(10,20)
+        //1020
+        add(10,'20')
+        add('10','20')
+
+
+
+        </script>
+    
+    </body>
+</html>

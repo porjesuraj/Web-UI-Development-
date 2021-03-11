@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page3</title>
+</head>
+<body>
+  
+  <h1>Function Alias</h1>
+
+  <script>
+
+    function function2() {
+      let num1 = 100
+      let num2 = num1
+
+      console.log('before chaning the value of num1')
+      console.log(`num1 = ${num1}, type = ${typeof(num1)}`)
+      console.log(`num2 = ${num2}, type = ${typeof(num2)}`)
+
+      num1 = 300
+
+      console.log('after chaning the value of num1')
+      console.log(`num1 = ${num1}, type = ${typeof(num1)}`)
+      console.log(`num2 = ${num2}, type = ${typeof(num2)}`)
+    }
+
+    // function2()
+
+
+    function function1() {
+      console.log('inside function1')
+    }
+
+    console.log(function1)
+    console.log(`type of function1 = ${typeof(function1)}`)
+
+    const num1 = 200
+
+    // function alias
+    // another name given to existing function
+    const myFunction1 = function1
+    console.log(myFunction1)
+    console.log(`type of myFunction1 =${typeof(myFunction1)}`)
+
+    function1()
+    myFunction1()
+
+  </script>
+</body>
+</html>

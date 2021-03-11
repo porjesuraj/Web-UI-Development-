@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>practice </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *
+            {
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .container
+            {
+                position: relative;
+            }
+
+            .road 
+            {
+                width: 100%;
+                height: 200px;
+                background-color: gray;
+               position: relative;
+               bottom: 5px;
+               border-style: dotted white ;
+
+            }
+            .divider
+            {
+               border: white dashed 5px;
+               position: absolute;
+               top: 100px;
+               width: 100%;
+
+
+            }
+            .rider
+            {
+                width: 70px;
+                height: 80px;
+               
+
+            }
+            .rider-right 
+            {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+            }
+            .rider-left
+            {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+
+        <div class="road">
+            <hr class="divider">
+              <img  class ="rider rider-left" id="left-rider" src="food-delivery.png" alt="">
+              <img class ="rider rider-right" id="right-rider" src="food-delivery-right.png" alt="">
+              
+             
+        </div>
+        <br>
+        <button id="moving-rider" onclick="movingTraffic()"> let the traffic move</button>
+      </div>
+
+      <script>
+         
+         let distance = 0
+         let rdistance = 0
+         let direction = 'left'
+
+         function movingTraffic() 
+         {
+           setInterval(moveRider,10)
+             
+         }
+
+         function moveRider()
+         {
+             const rider = document.getElementById('left-rider')
+             rider.style.transform = `translatex(${distance}px)`
+             
+             if(distance < window.innerWidth)
+             {
+                 distance += 5
+                 
+             }
+             else
+             {
+                 distance = 0
+             }
+             
+             const rightRider = document.getElementById('right-rider')
+             rightRider.style.transform = `translatex(${rdistance}px)`
+            
+
+             
+             if(rdistance < window.innerWidth)
+             {
+                 rdistance -= 5
+                 
+             }
+             else
+             {
+
+                 rdistance = +0
+             }
+            
+          
+         }
+
+      </script>
+
+    
+    </body>
+</html>

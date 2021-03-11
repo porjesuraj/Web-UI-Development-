@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <script>
+
+            function add(p1,p2)
+            {
+                console.log(`p1 + p2 = ${p1 + p2}`)
+            }
+            function sub(p1,p2)
+            {
+                console.log(`p1 - p2 = ${p1 - p2}`)
+            }
+
+            add(10,20)
+
+            function execute(func)
+            {
+                console.log(func)
+                console.log(`type of func = ${typeof(func)}`)
+
+                console.log(`calling func`)
+                func(30,40)
+            }
+           // execute(add)
+
+            execute(sub)
+        </script>
+    
+    </body>
+</html>

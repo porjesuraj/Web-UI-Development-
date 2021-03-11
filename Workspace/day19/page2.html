@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page2</title>
+</head>
+<body>
+  <h1>Mathematical Operators (multiplication and division)</h1>
+
+  <script>
+
+    const num1 = 10
+    const num2 = 20
+
+    const str1 = "test1"
+    const str2 = "test2"
+
+    const strNum1 = "30"
+    const strNum2 = "50"
+
+    // 10 * 20 = 200
+    console.log(`${num1} * ${num2} = ${num1 * num2}`)
+
+    // test1 * test2 = ...
+    const multiplication = str1 * str2
+    console.log(`${str1} * ${str2} = ${multiplication}`)
+    console.log(`data type of multiplication = ${typeof(multiplication)}`)
+
+    // "30" * "50" = 1500
+    // "30" and "50" will get converted to number 30 and number 50
+    console.log(`${strNum1} * ${strNum2} = ${strNum1 * strNum2}`)
+    
+
+    // 10 / 20 = 0.5
+    console.log(`${num1} / ${num2} = ${num1 / num2}`)
+
+    // test1 / test2 = NaN
+    console.log(`${str1} / ${str2} = ${str1 / str2}`)
+
+    // '30' / '50' = 0.6
+    // "30" and "50" will get converted to number 30 and number 50
+    console.log(`${strNum1} / ${strNum2} = ${strNum1 / strNum2}`)
+
+    // Infinity
+    console.log(`10 / 0 = ${10 / 0}`)
+
+  </script>
+</body>
+</html>

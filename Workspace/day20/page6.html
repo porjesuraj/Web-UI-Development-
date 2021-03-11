@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 6</title>
+</head>
+<body>
+  <script>
+
+    // p1, p2.. : formal paramaters
+    // function add(p1, p2, p3 = 0, p4 = 0, p5 = 0, p6 = 0) {
+    //   const addition = p1 + p2 + p3 + p4 + p5 + p6
+    //   console.log(`addition = ${addition}`)
+    // }
+
+    // 10, 20..: actual parameters (arguments)
+    // add(10, 20...)
+
+
+    // variable length arguments function
+    function add() {
+      // console.log('inside add')
+      console.log(arguments)
+
+      let sum = 0
+      for (let index = 0; index < arguments.length; index++) {
+        sum += arguments[index]
+      }
+      console.log(`addition = ${sum}`)
+    }
+
+    // add(10, 20)
+    // add(10, 20, 30)
+    // add(10, 20, 30, 40)
+    // add(10, 20, 30, 40, 50)
+    // add(10, 20, 30, 40, 50, 60)
+    // add(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+
+    function subtract(p1, p2) {
+      console.log(`p1 = ${p1}, type = ${typeof(p1)}`)
+      console.log(`p2 = ${p2}, type = ${typeof(p2)}`)
+
+      console.log(arguments)
+    }
+
+    subtract(10, 4)
+    subtract(10, 20, 40, 50, 60)
+
+  </script>
+</body>
+</html>

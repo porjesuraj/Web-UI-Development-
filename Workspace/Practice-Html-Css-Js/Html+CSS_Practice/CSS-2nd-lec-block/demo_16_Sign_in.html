@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+
+            *
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+       
+            .form-group
+            {
+                   
+               margin: 20px;
+               
+              
+            }
+       label
+       {
+           width: 100px;
+           font-size: 18px;
+           display: inline-block;
+       }
+       .form-control
+       {
+           width: 200px;
+           height: 10px;
+           padding: 10px;
+           font-size: 18px;
+
+       }
+
+form
+           {
+               border: solid black;
+               padding: 15px;
+               width: 450px;
+               height: 430px;
+               background-color:wheat;
+               margin: auto;
+               border-radius: 10px;
+               box-shadow: 0 0 10px 5px seagreen;
+
+               width: 250px;
+               height: 200px;
+
+               position: fixed;
+               top: 0;
+               right: 0;
+               left: 0;
+               bottom: 0;
+               opacity: 50%;
+
+           }
+           .watermark
+            { 
+                border: tomato;
+
+                margin: auto;
+                width: 450px;
+               height: 400px;
+
+               position: fixed;
+               top: 0;
+               right: 0;
+               left: 0;
+               bottom: 0;
+            }
+
+            .btn
+       {
+        border: none;
+             height:30px ;
+             width: 80px;
+             color: white;
+             border-radius: 5px;
+       }
+       .btn:hover
+       {
+        box-shadow: 0 0 10px 5px seagreen;
+        cursor: pointer;    
+    }
+         .btn-submit
+         {
+           
+             background-color: green;
+            
+         }
+         .btn-cancel
+         {
+             background-color:red;
+          
+         }
+        </style>
+    </head>
+    <body>
+
+        <h1> Sign in </h1>
+        <img src="1.jpeg" class="watermark" alt="back_image " > 
+     
+        <form accept="">
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email here">
+            </div>
+           <div class="form-group">
+               <label for="pass"> Password</label>
+               <input type="password" class="form-control" id="pass" placeholder="Enter password here">
+           </div>
+         
+         
+           <div class="form-group">
+               <input type="submit" class="btn btn-submit"  value="Register">
+               <input type="reset" class="btn btn-cancel" value="Cancel"> 
+        
+           </div>
+        
+          </form>
+
+          
+
+    
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    h4 {
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h4>Sign Up</h4>
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="username" placeholder="name">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="email">
+        </div>
+        <div class="form-group">
+          <label for="">Phone</label>
+          <input type="tel" class="form-control" id="phone" placeholder="phone number">
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="********">
+        </div>
+        <div class="form-group">
+          <div>Already have an account? <a href="signin.html">Signin here</a></div>
+          <button onclick="signup()" class="btn btn-success">Signup</button>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script>
+
+    function signup() {
+      const email = $('#email').val()
+      const password = $('#password').val()
+      const username = $('#username').val()
+      const phone = $('#phone').val()
+
+      // json: js object notation
+      const body = {
+        "email": email,
+        "password": password,
+        "username": username,
+        "phone": phone
+      }
+
+      // const queryString = `email=${email}&password=${password}&username=${username}&phone=${phone}`
+      // $.get('php/signup.php?' + queryString, function(response) {
+      //   console.log(response)
+      // })
+
+      $.post('api/signup.php', body, function(response) {
+        // console.log(response)
+        const result = JSON.parse(response)
+        if (result['status'] == 'success') {
+          alert('successfully registered an account')
+        } else {
+          alert('error while registering new account')
+        }
+      })
+    }
+
+  </script>
+</body>
+</html>

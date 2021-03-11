@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    <style>
+
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transition: 1s;
+            border-radius: 25px;
+            display: inline-block;
+        }
+        .box:hover
+        {
+            background-color:mediumblue;
+            transform: scale(1.2);
+        }
+        img.heart
+        {     
+            align-self: center;
+            width: 200px;
+            height: 200px;
+            transition: 2s;
+        }
+        .heart:hover
+        {
+            transform: scale(1.5);
+
+        }
+        .btn
+        {
+            width:100px ;
+            height:30px ;
+            background-color: mediumseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        .btn:hover
+        {
+            box-shadow:0 0 3px 1px crimson;
+            transition: 2s;
+        }
+        img.food-d
+        {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            transition: 1s;
+        }
+        img.food-d:hover
+        {
+            
+            transform: translateX(600px);
+
+
+        }
+    </style>
+    
+    </head>
+    <body>
+
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+       <br>
+       <br>
+       <br>
+       <img src="heart.png" alt="" class="heart">
+       <br>
+       <button class="btn"> click here</button>
+       <br>
+       <br>
+       <img src="food-delivery.png" alt="" class="food-d">
+    
+    </body>
+</html>

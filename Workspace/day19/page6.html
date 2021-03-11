@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page6</title>
+</head>
+<body>
+
+  <h1>Functions Demo</h1>
+  
+  <script>
+
+    // empty function
+    function function0() {}
+
+    // parameterless function declaration
+    function function1() {
+      console.log('inside function1')
+    }
+
+    // function call
+    // function1()
+
+
+    // parameterized function declaration
+    // void function2(int param) {}
+    // function2("test");
+    function function2(param) {
+      // param = true
+      console.log(`inside the function2`)
+      console.log(`param = ${param}, type of param = ${typeof(param)}`)
+    }
+
+    // function2(20)
+    // function2('test1')
+    // function2(true)
+
+
+    function add(p1, p2) {
+      const addition = p1 + p2
+      console.log(`${p1} + ${p2} = ${p1 + p2}`)
+    }
+
+    // 30
+    add(10, 20)
+
+    // 1020
+    add(10, '20')
+
+    // 1020
+    add('10', '20')
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page1</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* h1 {
+      color: red;
+      font-size: 100px;
+    } */
+
+    .box {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      margin: 50px;
+      /* box-shadow: 0 0 10px 5px black; */
+    }
+
+    .box-2 {
+      color: white;
+      text-align: center;
+      
+      background-color: green;
+      width: 50px;
+      height: 50px;
+      margin: 50px;
+    }
+
+    .box-2-updated {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 5px black;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="message-h1">this is a header 1</h1>
+
+  <button onclick="changeMessage()">update message</button>
+
+  <div id="box" class="box"></div>
+
+  <button onclick="updateBox()">update box</button>
+
+  <div id="box-2" class="box-2">Box 2</div>
+
+  <button onclick="updateBox2()">update box 2</button>
+  <button onclick="restoreBox2()">restore box 2</button>
+
+  <script>
+
+    function changeMessage() {
+      const h1 = document.getElementById('message-h1')
+      h1.innerHTML = "the message is changed"
+
+      // css properties
+      h1.style.color = "red"
+      h1.style.fontSize = "100px"
+    }
+
+    function updateBox() {
+      const div = document.getElementById('box')
+      div.style.backgroundColor = 'green'
+      div.style.width = '200px'
+      div.style.height = '200px'
+      div.style.boxShadow = '0 0 10px 5px black'
+      div.style.borderRadius = '10px'
+    }
+
+    function updateBox2() {
+      const div = document.getElementById('box-2')
+
+      // update the css class
+      // div.className = 'box-2-updated'
+
+      // add a new class to the existing class list
+      div.classList.add('box-2-updated')
+      
+      // update css properties individually
+      // div.style.backgroundColor = 'red'
+      // div.style.width = '100px'
+      // div.style.height = '100px'
+      // div.style.boxShadow = '0 0 10px 5px black'
+      // div.style.borderRadius = '10px'
+    }
+
+    function restoreBox2() {
+      const div = document.getElementById('box-2')
+      div.classList.remove('box-2-updated')
+    }
+
+  </script>
+</body>
+</html>

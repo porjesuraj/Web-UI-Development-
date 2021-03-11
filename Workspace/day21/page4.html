@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page4</title>
+</head>
+<body>
+  
+  <h1 id="result-h1">Welcome</h1>
+
+  <div>
+    First Name: <input id="first-name" type="text" placeholder="firstname here">
+  </div>  
+  <div>
+    Last Name: <input id="last-name" type="text" placeholder="lastname here">
+  </div>  
+  <div>
+    Phone: <input id="phone" type="tel" placeholder="phone number">
+  </div>  
+  <div>
+    Email: <input id="email" type="email" placeholder="email here">
+  </div>  
+
+  <div id="result-div"></div>
+  <button onclick="greetUser()">greet user</button>
+
+  <script>
+
+    function greetUser() {
+
+      // get the input from user
+      const inputFirstName = document.getElementById('first-name')
+
+      // for input type objects use .value property
+      const firstName = inputFirstName.value
+
+      // get last name
+      const inputLastName = document.getElementById('last-name')
+      const lastName = inputLastName.value
+
+      // get phone
+      const inputPhone = document.getElementById('phone')
+      const phone = inputPhone.value
+
+      // get email
+      const inputEmail = document.getElementById('email')
+      const email = inputEmail.value
+
+      // update the result
+      const h1 = document.getElementById('result-h1')
+      h1.innerHTML = "Welcome " + firstName + " " + lastName
+
+      // update the user info in result-div
+      const resultDiv = document.getElementById('result-div')
+      resultDiv.innerHTML += "First Name: " + firstName + "<br>"
+      resultDiv.innerHTML += "Last Name: " + lastName + "<br>"
+      resultDiv.innerHTML += "Phone: " + phone + "<br>"
+      resultDiv.innerHTML += "Email: " + email
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> page 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+
+            *
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+       
+            .form-group
+            {
+                   
+               margin: 20px;
+               
+              
+            }
+       label
+       {
+           width: 100px;
+           font-size: 18px;
+           display: inline-block;
+       }
+       .form-control
+       {
+           width: 200px;
+           height: 10px;
+           padding: 10px;
+           font-size: 18px;
+
+       }
+       .form-control:focus
+       {
+        
+box-shadow: 0 0 10px 5px #5F59FF;
+       }
+       textarea
+       {
+           resize: none;
+       }
+       .btn
+       {
+        border: none;
+             height:30px ;
+             width: 80px;
+             color: white;
+             border-radius: 5px;
+       }
+       .btn:hover
+       {
+        box-shadow: 0 0 10px 5px seagreen;
+        cursor: pointer;    
+    }
+         .btn-submit
+         {
+           
+             background-color: green;
+            
+         }
+         .btn-cancel
+         {
+             background-color:red;
+          
+         }
+         .btn-success
+           {
+               background-color: green;
+           }
+           .btn-danger
+           {
+               background-color: red;
+           }
+           form
+           {
+               border: solid black;
+               padding: 15px;
+               width: 450px;
+               height: 430px;
+               background-color:lightslategrey;
+               margin: auto;
+               border-radius: 10px;
+               box-shadow: 0 0 10px 5px seagreen;
+           }
+           h1
+           {
+               font-size: 30px;
+               text-align: center;
+            }
+           
+        </style>
+    </head>
+    <body>
+       <h1>Sign Up </h1> 
+      
+  <form accept="">
+
+    <div class="form-group">
+        <label for="f_name">First Name</label>
+        <input type="text" class="form-control" id="f_name" placeholder="Enter name here">
+    </div>
+   <div class="form-group">
+       <label for="l_name"> Last Name </label>
+       <input type="text" class="form-control" id="l_name" placeholder="enter last name">
+   </div>
+   <div class="form-group">
+       <label for="age"> Age </label>
+       <input type="number" class="form-control" id="age" placeholder="Age">
+   </div>
+   <div class="from-group">
+       <label for="b-date"> Birth-Date</label>
+       <input type="date" class="form-control" id="b_date">
+   </div>
+   <div class="form-group">
+       <label for="add">Address</label>
+       <textarea name="add" id="add" cols="20" rows="4" class="form-control"></textarea>
+   </div>
+   <div class="form-group">
+       <input type="submit" class="btn btn-submit"  value="Register">
+       <input type="reset" class="btn btn-cancel" value="Cancel"> 
+
+   </div>
+
+  </form>
+ <!--<button class="btn btn-success">success</button>
+<button class="btn btn-danger">danger</button>--> 
+
+
+
+
+
+
+
+    
+    </body>
+</html>

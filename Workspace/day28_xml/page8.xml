@@ -1,0 +1,22 @@
+<!DOCTYPE person [
+  <!ELEMENT person (name, address, phone, email)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT address (city, state, country)>
+
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT state (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
+
+  <!ELEMENT phone (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+]>
+<person>
+  <name>person1</name>
+  <address>
+    <city></city>
+    <state></state>
+    <country></country>
+  </address>
+  <phone>12335354</phone>
+  <email>person1@test.com</email>
+</person>

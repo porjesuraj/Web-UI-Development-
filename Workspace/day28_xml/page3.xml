@@ -1,0 +1,14 @@
+<cars>
+  <car>
+    <model>i20</model> 
+    <company>hyundai</company>
+    <price>7.5</price>
+    <color>space gray</color>
+  </car>
+  <car>
+    <model>nano</model> 
+    <company>tata</company>
+    <price>2.5</price>
+    <color>yellow</color>
+  </car>
+</cars>

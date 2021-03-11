@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    input[type="text"] {
+      background-color: yellow;
+    }
+
+    input[required] {
+      border-color: red;
+    }
+
+    input[type="number"] {
+      background-color: bisque;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: green;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Attribute selector</h1>
+
+  <form action="">
+
+    <div>
+      <label for="">First Name</label>
+      <input required type="text" placeholder="name here">
+    </div>
+
+    <div>
+      <label for="">Last Name</label>
+      <input type="text" placeholder="name here">
+    </div>
+
+    <div>
+      <label for="">Age</label>
+      <input type="number" placeholder="age here">
+    </div>
+
+    <div>
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear">
+    </div>
+  
+  </form>
+  
+</body>
+</html>

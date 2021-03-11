@@ -1,0 +1,5 @@
+<!DOCTYPE name [
+  <!ELEMENT name (#PCDATA)>
+]>
+<name>steve</name>
+<!-- <Name>steve</Name> -->

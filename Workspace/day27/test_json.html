@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    function function1() {
+      // json object
+      const person = {
+        "name": "person1",
+        "address": "pune",
+        "email": "person1@test.com"
+      }
+
+      console.log(`type = ${typeof(person)}`)
+      console.log(`name - ${person['name']}`)
+      console.log(`address - ${person['address']}`)
+      console.log(`email - ${person['email']}`)
+    }
+
+    // function1()
+
+    function function2() {
+      // json object
+      const person = {
+        "name": "person1",
+        "address": "pune",
+        "email": "person1@test.com"
+      }
+
+      // converts json object to string
+      // serialization
+      const str = JSON.stringify(person)
+
+      console.log(`perosn = ${person}`)
+      console.log(`type of person = ${typeof(person)}`)
+
+      console.log(`str = ${str}`)
+      console.log(`type of str = ${typeof(str)}`)
+    }
+
+    // function2()
+
+    function function3() {
+      const str = '{ "model": "i20", "company": "hyundai", "price": 7.5 }'
+      console.log(`str = ${str}`)
+      console.log(`type of str = ${typeof(str)}`)
+
+      // converts string to json
+      // deserialization
+      const car = JSON.parse(str)
+      console.log(`car =`)
+      console.log(car)
+      console.log(`type of car = ${typeof(car)}`)
+
+    }
+
+    function3()
+
+  </script>
+  
+</body>
+</html>

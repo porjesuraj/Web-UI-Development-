@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 8</title>
+</head>
+<body>
+  <h1>Collection Demo</h1>
+
+  <script>
+
+    function function1() {
+      // collection of numbers
+      const numbers = [10, 20, 30, 40, 50, 60, 70, 80]
+
+      console.log(numbers)
+
+      // traditional for loop
+      // for (let index = 0; index < numbers.length; index++) {
+      //   console.log(`value at ${index} = ${numbers[index]}`)
+      // }
+
+      // properties
+      // console.log(`length = ${numbers.length}`)
+
+      // add a new value
+      numbers.push(90)
+      console.log(numbers)
+    }
+
+    // function1()
+
+
+    function function2() {
+      // collection of strings
+      const countries = ["india", "usa", "uk", "japan"]
+
+      console.log(countries)
+
+      // append China to the end of the collection
+      countries.push("China")
+
+      console.log(countries)
+
+      // remove the last value of the collection
+      countries.pop()
+
+      console.log(countries)
+
+    }
+
+    function2()
+
+  </script>
+</body>
+</html>

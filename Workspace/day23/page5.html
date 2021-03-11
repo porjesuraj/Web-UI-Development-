@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page5</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+
+    .box {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" class="form-control" id="last-name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" class="form-control" id="phone">
+        </div>
+        <div class="form-group">
+          <button onclick="registerUser()" class="btn btn-success">Register</button>
+          <button onclick="clearInputValues()" class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="box"></div>
+    <button class="btn btn-primary" onclick="animateBox1()">animate 1</button>
+    <button class="btn btn-primary" onclick="animateBox2()">animate 2</button>
+  
+   
+  </div>
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script>
+
+    function animateBox1() {
+      // console.log($('.box'))
+      // $('.box').slideToggle(3000)
+      $('.box')
+        .animate({ 'height': '200px' }, 1000)
+        .animate({ 'width': '200px' }, 1000)
+        .animate({ 'height': '100px' }, 1000)
+        .animate({ 'width': '100px' }, 1000)
+    }
+
+    function animateBox2() {
+      $('.box')
+        .animate({ 'height': '200px', 'width': '200px' }, 500)
+        .animate({ 'height': '100px', 'width': '100px' }, 500)
+        .animate({ 'height': '200px', 'width': '200px' }, 500)
+        .animate({ 'height': '100px', 'width': '100px' }, 500)
+        .animate({ 'height': '200px', 'width': '200px' }, 500)
+        .animate({ 'height': '100px', 'width': '100px' }, 500)
+    }
+
+    function registerUser() {
+      // get the values entered by user
+      const firstName = $('#first-name').val()
+      const lastName = $('#last-name').val()
+      const email = $('#email').val()
+      const phone = $('#phone').val()
+
+      // print the result in result div
+      // document.getElementById('result').innerHTML = ""
+      $('#result').html(`
+        <div><strong>First Name: </strong>${firstName}</div>
+        <div><strong>Last Name: </strong>${lastName}</div>
+        <div><strong>Email: </strong>${email}</div>
+        <div><strong>Phone number: </strong>${phone}</div>
+      `)
+    }
+
+    function clearInputValues() {
+      $('#first-name').val('')
+      $('#last-name').val('')
+      $('#email').val('')
+      $('#phone').val('')
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    p + span,
+    li {
+      color: red;
+    }
+
+    /* p span strong {}
+    p > span > strong {}
+    p ~ span {}
+    p + span {} */
+
+    p + span {
+      color: white;
+      background-color: green;
+    }
+
+    li + li {
+      color: red;
+    }
+
+    div + p + p {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Adjacent Sibling Selector Demo</h1>
+
+  <span>this is span before para</span>
+
+  <p>this is para</p>
+  <span>this is span after para 1</span>
+  <span>this is span after para 2</span>
+  <div>this is a div 1</div>
+  <div>this is a div 2</div>
+  <div>this is a div 3</div>
+  <p>this is para after div 1</p>
+  <p>this is para after div 2</p>
+  <p>this is para after div 3</p>
+  <span>this is span after div 1</span>
+  <span>this is span after div 2</span>
+
+  <ul>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+  </ul>
+
+</body>
+</html>

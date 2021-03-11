@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page3</title>
+  <style>
+
+    .box {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      transition: all 1s;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div id="box" class="box"></div>
+  <button onclick="hideBox()">hideBox</button>
+  <button onclick="showBox()">showBox</button>
+
+  <button onclick="animateBox()">animate</button>
+
+  <script>
+
+    function hideBox() {
+      // document.getElementById('box').style.display = "none"
+      document.getElementById('box').style.opacity = "0"
+    }
+
+    function showBox() {
+      // document.getElementById('box').style.display = "block"
+      document.getElementById('box').style.opacity = "1"
+    }
+
+    function animateBox() {
+
+    }
+
+  </script>
+
+</body>
+</html>

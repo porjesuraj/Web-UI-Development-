@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page 4</title>
+  <style>
+
+    #box {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <hr>
+  <button onclick="hideBox()">hide</button>
+  <button onclick="showBox()">show</button>
+  <button onclick="toggleShow()">toogle</button>
+  <hr>
+  <button onclick="slideUpBox()">slide up</button>
+  <button onclick="slideDownBox()">slide down</button>
+  <button onclick="slideToggleBox()">slide toggle</button>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+
+    function slideUpBox() {
+      $('#box').slideUp(1000)
+    }
+
+    function slideDownBox() {
+      $('#box').slideDown(1000)
+    }
+
+    function slideToggleBox() {
+      $('#box').slideToggle()
+    }
+
+    function hideBox() {
+      // const div = document.getElementById('box')
+      // const div = $('#box')
+      // console.log(div)
+      $('#box').hide(1000)
+    }
+
+    function showBox() {
+      $('#box').show(1000)
+    }
+
+    function toggleShow() {
+      $('#box').toggle(1000)
+    }
+
+  </script>
+</body>
+</html>

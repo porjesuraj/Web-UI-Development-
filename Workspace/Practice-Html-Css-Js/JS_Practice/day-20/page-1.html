@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Why jquery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+          /*  h1
+            {
+                color: rebeccapurple;
+            }*/
+            .box-class 
+            {
+                width: 100px;
+                height: 100px;
+                margin: 50px;
+                background-color: rebeccapurple;
+                box-shadow: 0 0 1px 2px greenyellow;
+
+            }
+            .box-2
+            {
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                color:white;
+
+            }
+            .update-box-2
+            {
+                margin: 50px;
+                border-radius: 50px;
+                background-color: rebeccapurple;
+                box-shadow: 0 0 1px 2px greenyellow;
+               
+                text-align: center;
+
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1 id="message-h1">this is header 1</h1>
+        <button onclick="changeMessage()"> change header</button>
+        <br>
+        <div id="box" class="box-class"></div>
+
+       <button  class="upateBox" onclick="updateBox()"> update box</button>
+          <br> <br> <br> 
+
+       <div class="box-2 " id="box2"> box 2</div>
+       <br> 
+       <button  onclick="updateBox2()"> update box 2</button>
+       <button  onclick="restoreBox2()"> restore box 2</button>
+        <script>
+
+            function changeMessage()
+            {
+                const h1 = document.getElementById('message-h1')
+                    h1.innerHTML = "message is changed"
+                    // css property
+                    h1.style.color = "red"
+                    h1.style.fontSize = "100px"
+            }
+
+            function updateBox()
+            {
+                const div = document.getElementById('box')
+                div.style.backgroundColor = 'yellow'
+                div.style.width = '400px'
+                div.style.boxShadow = `0 0 1px 0px greenyellow;`
+
+            }
+            function updateBox2()
+            {
+                const box2 = document.getElementById('box2')
+               //add css by class in style tag
+                box2.className = 'box-2 update-box-2'
+                //adding multiple classes
+              //  box2.className = 'box-2 update-box-2'
+
+
+               // box2.classList.add('update-box-2')
+             /* box2.style.backgroundColor = "red"
+                box2.style.boxShadow = '0 0 1px 1px green'
+                box2.style.borderRadius = '400px'
+              */            
+            }
+          
+            function restoreBox2()
+            {
+                const box = document.getElementById('box2')
+                box.className = 'box-2'
+            }
+
+        </script>
+    
+    </body>
+</html>

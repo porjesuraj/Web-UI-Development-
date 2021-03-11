@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page2</title>
+</head>
+<body>
+  <h1>HTML + JS Demo</h1>
+  <h2>This is a header 2</h2>
+
+  <h3>this is a header 3</h3>
+
+  <button onclick="printHello()">click me</button>
+
+  <script>
+  
+    // click       : event
+    // printHello(): event handler
+    function printHello() {
+      // console.log('hello from js')
+      console.log(document)
+
+      // get object(s) of h1 element(s)
+      const arrayH1 = document.getElementsByTagName('h1')
+      // console.log(arrayH1)
+
+      // get the h1 element where the text is "HTML + JS Demo"
+      const h1Hello = arrayH1[0]
+      // console.log(h1Hello)
+
+      // change the text of h1 to "welecome to JS"
+      h1Hello.innerHTML = "Welcome to JS"
+
+
+      // get the h2 type elements
+      const arrayH2 = document.getElementsByTagName('h2')
+      const h2 = arrayH2[0]
+      h2.innerHTML = "message is changed...."
+
+
+      const arrayH3 = document.getElementsByTagName('h3')
+      const h3 = arrayH3[0]
+      h3.innerHTML = "now lets have a break"
+
+      // message is changed in h3
+    }
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

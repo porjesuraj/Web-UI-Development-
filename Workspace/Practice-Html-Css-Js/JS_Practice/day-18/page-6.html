@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <script>
+            //formal parameters
+         /*   function add(p1,p2,p3=0,p4=0,p5=0,p6=0)
+            {
+               console.log(`addition = ${p1 + p2 }`)
+            }
+            add(10,20,30)
+*/
+        //variable length argument function
+          function add()
+          {
+              console.log('inside add')
+              console.log(arguments)
+              let sum = 0
+              for(let index = 0;index < arguments.length;index++)
+              {
+               sum += arguments[index]
+              }
+              console.log(`addition = ${sum}`)
+          }
+          //actual parameter or arguments
+          add(10,20)
+          add(10,20,30,40,50,60)
+        </script>
+    
+    </body>
+</html>

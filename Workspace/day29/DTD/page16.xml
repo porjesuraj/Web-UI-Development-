@@ -1,0 +1,58 @@
+<!DOCTYPE persons [
+  <!ELEMENT persons (person+)>
+
+  <!ELEMENT person (name, address, phone+, email, age)>
+  <!ELEMENT name (#PCDATA)>
+  
+  <!ELEMENT address (#PCDATA)>
+  <!ATTLIST address 
+    city CDATA #REQUIRED
+    state CDATA #REQUIRED
+    country CDATA #REQUIRED>
+
+  <!ELEMENT phone (#PCDATA)>
+  <!ATTLIST phone provider (airtel|gio|vodafone|idea) #REQUIRED>
+  <!ATTLIST phone model (iphone|note|oneplus) #REQUIRED>
+
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT age (#PCDATA)>
+]>
+
+<persons>
+  <person>
+    <name></name>
+    <address city="" state="" country="" />
+    <!-- 
+      provider = airtel, gio, vodafone, idea
+      model = iphone, note, oneplus
+    -->
+    <phone provider="airtel" model="iphone"></phone>
+    <phone provider="airtel" model="iphone"></phone>
+    <email></email>
+    <age>invalid value</age>
+  </person>
+
+  <person>
+    <name></name>
+    <address city="" state="" country="" />
+    <!-- 
+      provider = airtel, gio, vodafone, idea
+      model = iphone, note, oneplus
+    -->
+    <phone provider="airtel" model="iphone"></phone>
+    <email></email>
+    <age></age>
+  </person>
+
+  <person>
+    <name></name>
+    <address city="" state="" country="" />
+    <!-- 
+      provider = aitel, gio, vodafone, idea
+      model = iphone, note, oneplus
+    -->
+    <phone provider="airtel" model="iphone"></phone>
+    <email></email>
+    <age></age>
+  </person>
+</persons>

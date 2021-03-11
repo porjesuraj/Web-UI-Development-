@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<person>
+  <name>person1</name>
+  <phone usage="general">9922334455</phone>
+  <phone usage="special">9922334456</phone>
+  <address>pune</address>
+</person>

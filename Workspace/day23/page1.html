@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page1</title>
+</head>
+<body>
+  <h1 id="my-h1">welcome to js</h1>
+  <button onclick="changeText()">click here</button>
+
+  <hr>
+
+  <div>
+    <label for="number1">Number 1</label>
+    <input type="number" id="number1">
+  </div>
+  <div>
+    <label for="number2">Number 2</label>
+    <input type="number" id="number2">
+  </div>
+  <div id="result">
+    Result will appear here
+  </div>
+
+  <button onclick="add()">Add</button>
+  <button onclick="multiply()">Multiply</button>
+  <button onclick="divide()">Divide</button>
+  <button onclick="subtract()">Subtract</button>
+
+  <script src="js/myfunctions.js"></script>
+  <script>
+
+    function changeText() {
+      const h1 = document.getElementById('my-h1')
+      h1.innerHTML = 'the message is changed'
+    }
+
+  </script>
+</body>
+</html>

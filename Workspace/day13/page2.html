@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page2</title>
+
+  <style>
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    label {
+      font-size: 18px;
+      width: 130px;
+      display: inline-block;
+    }
+
+    .form-group {
+      /* border: red solid; */
+      margin: 15px;
+    }
+
+    .form-control {
+      width: 252px;
+      /* height: 25px; */
+      padding: 7px;
+      font-size: 18px;
+    }
+
+    .form-control:focus {
+      outline: none;
+      box-shadow: 0 0 7px 1px #7D7D7D;
+      border: solid 1px #7D7D7D;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .btn {
+      border: none;
+      height: 30px;
+      width: 85px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 3px 1px #7D7D7D;
+      cursor: pointer;
+    }
+
+    .btn-success {
+      background-color: green;
+    }
+
+    .btn-danger {
+      background-color: red;
+    }
+
+    form {
+      border: solid #7D7D7D;
+      padding: 15px;
+      width: 435px;
+      height: 430px;
+      background-color: blanchedalmond;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 1px #7D7D7D;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    div.logo {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="images/logo.png" alt="">
+  </div>
+
+  <h1>Sign up</h1>
+
+  <form action="">
+
+    <div class="form-group">
+      <label for="first-name">First Name</label>
+      <input placeholder="first name" class="form-control" id="first-name" type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last Name</label>
+      <input placeholder="last name" type="text" class="form-control" id="last-name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input placeholder="age" type="number" class="form-control" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="birth-date">Birth Date</label>
+      <input type="date" class="form-control" id="birth-date">
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea placeholder="address" id="address" rows="5" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for=""></label>
+      <input type="submit" class="btn btn-success" value="Register">
+      <input type="reset" class="btn btn-danger" value="Cancel">
+    </div>
+
+  </form>
+
+</body>
+</html>

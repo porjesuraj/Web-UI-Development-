@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page1</title>
+
+  <style>
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: all 1s;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .box:hover {
+      background-color: green;
+      /* width: 120px;
+      height: 120px; */
+      transform: rotate(10deg);
+    }
+
+    img.heart {
+      margin: 50px;
+      width: 100px;
+      height: 100px;
+      transition: all 1s;
+    }
+
+    img.heart:hover {
+      transform: scale(1.5);
+    }
+
+    .btn {
+      width: 100px;
+      height: 30px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: all 1s;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      box-shadow: 0 0 3px 1px gray;
+    }
+
+    img.rider {
+      margin: 50px;
+      width: 100px;
+      height: 100px;
+      transition: all 1s;
+    }
+
+    img.rider:hover {
+      transform: translateX(300px);
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>Animation Demo</h1>
+
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <br>
+  <img class="heart" src="images/heart.png" alt="">
+
+  <br>
+  <button class="btn">click here</button>
+
+  <br>
+  <img class="rider" src="images/delivery-man.png" alt="">
+</body>
+</html>

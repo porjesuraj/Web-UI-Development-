@@ -1,0 +1,10 @@
+<person>
+  <name>person1</name>
+  <address>
+    <city>pune</city>
+    <state>MH</state>
+    <country>India</country>
+  </address>
+  <phone provider="airtel">122234454</phone>
+  <phone provider="geo">456454666</phone>
+</person>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page1</title>
+</head>
+<body>
+  <h1>Mathematical Operators (addition)</h1>
+  <script>
+
+    const num1 = 10
+    const num2 = 20
+
+    const str1 = "test1"
+    const str2 = "test2"
+
+    const strNum1 = "30"
+    const strNum2 = "50"
+
+    // 10 + 20 = 30
+    console.log(`${num1} + ${num2} = ${num1 + num2}`)
+
+    // "test1" + "test2" = "test1test2"
+    console.log(`${str1} + ${str2} = ${str1 + str2}`)
+
+    // 10 + "30" = "1030"
+    console.log(`${num1} + ${strNum1} = ${num1 + strNum1}`)
+
+    // 20 + "50" = "2050"
+    console.log(`${num2} + ${strNum2} = ${num2 + strNum2}`)
+
+    // 10 + 20 + "30"
+    // 30 + "30" = 3030
+    console.log(`${num1} + ${num2} + ${strNum1} = ${num1 + num2 + strNum1}`)
+
+    // 10 + 20 + "30" + 10 + 20
+    // 30 + "30" + 10 + 20
+    // "3030" + 10 + 20
+    // "303010" + 20
+    // "30301020"
+    console.log(`${num1} + ${num2} + ${strNum1} + ${num1} + ${num2} = ${num1 + num2 + strNum1 + num1 + num2 }`)
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signin</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+
+    .signup {
+      width: 500px;
+      height: 480px;
+      border: solid lightgray 2px;
+      padding: 20px;
+
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: lightyellow;
+      box-shadow: 0 0 10px 2px lightgray;
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="signup">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" placeholder="name here" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" class="form-control" placeholder="phone here" id="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" placeholder="email here" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" placeholder="password here" id="password">
+    </div>
+
+    <div class="form-group">
+      <div>
+        Already have an account?<a class="btn btn-link" href="signin_1.html">Sign in here</a>
+      </div>
+      <button onclick="signup()" class="btn btn-success">Signup</button>
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+
+    function signup() {
+      const name = $('#name').val()
+      const phone = $('#phone').val()
+      const email = $('#email').val()
+      const password = $('#password').val()
+
+      const queryString = `name=${name}&email=${email}&password=${password}&phone=${phone}`
+      $.ajax({
+        url: 'php/signup.php?' + queryString,
+        method: 'GET',
+        success: function(response) {
+          console.log(response)
+          alert(response)
+        },
+        error: function(error) {
+          console.log(error)
+        }
+      })
+    }
+
+  </script>
+</body>
+</html>

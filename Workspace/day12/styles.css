@@ -1,0 +1,17 @@
+* {
+
+  /* fall-back fonts */
+  font-family: Helvetica, arial, sans-serif;
+}
+
+/* custom font declaration */
+@font-face {
+  font-family: my-header-font;
+  src: url('fonts/header.ttf');
+}
+
+/* custom font declaration */
+@font-face {
+  font-family: my-div-font;
+  src: url('fonts/Family-Tour.ttf');
+}

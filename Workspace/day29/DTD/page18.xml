@@ -1,0 +1,40 @@
+<tables
+  xmlns:rt="http://real-table"
+  xmlns:ht="http://html-table">
+
+  <rt:table>
+    <rt:size></rt:size>
+    <rt:company></rt:company>
+    <rt:price></rt:price>
+  </rt:table>
+
+  <rt:table>
+    <rt:size></rt:size>
+    <rt:company></rt:company>
+    <rt:price></rt:price>
+  </rt:table>
+
+  <ht:table>
+    <ht:tr>
+      <ht:td></ht:td>
+    </ht:tr>
+  </ht:table>
+
+  <ht:table>
+    <ht:tr>
+      <ht:td></ht:td>
+    </ht:tr>
+  </ht:table>
+
+  <ht:table>
+    <ht:tr>
+      <ht:td></ht:td>
+    </ht:tr>
+  </ht:table>
+  
+  <ht:table>
+    <ht:tr>
+      <ht:td></ht:td>
+    </ht:tr>
+  </ht:table>
+</tables>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    </head>
+    <body>
+
+     <div class="container">
+        <h1>product listing</h1>
+     <div class="row"> 
+        <div class="col-md-3">
+          <ul class="list-group">
+              <li class="list-group-item"> 1.Electronics</li>
+              <li class="list-group-item">2.Home Decor</li>
+              <li class="list-group-item">3.Cars</li>
+              <li class="list-group-item">4.Bixes</li>
+              <li class="list-group-item">5.Mobile</li>
+          </ul>
+          <div class="btn-group">
+          <div class="btn-toolbar">
+           <button onclick="activeListItem(0)" class="btn btn-success">1</button onclick="activeListItem()">
+           <button onclick="activeListItem(1)" class="btn btn-success">2</button onclick="activeListItem()">
+           <button onclick="activeListItem(2)" class="btn btn-success">3</button onclick="activeListItem()">
+           <button onclick="activeListItem(3)" class="btn btn-success">4</button onclick="activeListItem()">
+           <button onclick="activeListItem(4)" class="btn btn-success">5</button onclick="activeListItem()">
+       
+          </div>
+        </div>
+        </div>
+        <div class="col-md-9">
+
+        </div>
+    </div>
+     </div>
+
+     <script>
+
+         function activeListItem(index)
+          {
+              const items = document.getElementsByTagName('li')
+              // deactive /remove active from all li items
+              for(let itemIndex = 0;itemIndex < items.length;itemIndex++ )
+              {
+                  items[itemIndex].classList.remove('active')
+              }
+              //here active stays not removed for second click
+              items[index].classList.add('active')
+
+
+
+
+         }
+     </script>
+    
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 7</title>
+</head>
+<body>
+  <h1>function demo</h1>
+
+  <script>
+
+    // parameters = number1, number2
+    // void add(int num1, int num2) {}
+    // add(10, 20);
+    // add(10);
+    function add(number1, number2) {
+      // number1 = 10
+      // number2
+      console.log(`number1 = ${number1}, type = ${typeof(number1)}`)
+      console.log(`number2 = ${number2}, type = ${typeof(number2)}`)
+      // const answer = number1 + number2
+      // console.log(`answer = ${answer}`)
+    }
+
+    // arguments = 10, 20
+    // add(10, 20)
+
+    // arguments = 10
+    // add(10)
+
+    // add()
+
+    // arguments = 10, 20, 40
+    // add(10, 20, 40)
+
+
+    function multiply(num1, num2 = 20) {
+      const multiplication = num1 * num2
+      console.log(`multiplication = ${multiplication}`)
+    }
+
+    // num1 = 40, num2 = 100
+    // multiply(40, 100)
+
+    // num1 = 40, num2 = 10
+    multiply(40)
+
+  </script>
+</body>
+</html>

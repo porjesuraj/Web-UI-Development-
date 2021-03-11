@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page7</title>
+
+  <style>
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .panel {
+      border: solid black 1px;
+      width: 600px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      font-size: 20px;
+    }
+
+    .header {
+      background-color: #F6F6F6;
+      padding: 10px;
+    }
+
+    .contents {
+      padding: 10px;
+      height: 0px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="panel">
+    <div id="header" onclick="animateContents()" class="header">This is a header</div>
+    <div id="contents" class="contents">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. </div>  
+  </div>
+
+  <script>
+
+    let isVisible = false
+    let height = 0
+    let interval = undefined
+
+    function toggle() {
+      const div = document.getElementById('contents')
+
+      if (isVisible) {
+        // if the div is already visible then hide it
+        div.style.display = "none"
+        isVisible = false
+      } else {
+        // if the div is invisible then make it visible
+        div.style.display = "block"
+        isVisible = true
+      }
+    }
+
+    function animateContents() {
+      if (isVisible) {
+        // get the interval object
+        interval = setInterval(decreaseHeight, 10)
+        isVisible = false
+      } else {
+        // get the interval object
+        interval = setInterval(increaseHeight, 10)
+        isVisible = true
+      }
+    }
+
+    function increaseHeight() {
+      const div = document.getElementById('contents')
+      div.style.height = `${height}px`
+      height += 10
+
+      if (height >= 450) {
+        // stop the animation
+        clearInterval(interval)
+      }
+    }
+
+    function decreaseHeight() {
+      const div = document.getElementById('contents')
+      div.style.height = `${height}px`
+      height -= 10
+
+      if (height <= -10) {
+        // stop the animation
+        clearInterval(interval)
+      }
+    }
+
+  </script>
+  
+</body>
+</html>

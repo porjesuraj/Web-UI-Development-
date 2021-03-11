@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body>
+        <h1>popups demo </h1>
+
+
+        <button onclick="showAlert()"> show alert</button>
+
+        <h2>show prompt</h2>
+        <button onclick="showPrompt() "> show prompt</button>
+        <h2>show confirmation</h2>
+        <button onclick="showConfirm()">show confirm</button>
+     <script>
+
+         function showAlert()
+         {
+             //window.alert('this is a alert')
+             alert('this is an alert')
+         }
+         function showPrompt()
+         {
+           const userName = window.prompt('Enter your Name')
+           console.log(userName)
+           //document.write(userName)
+         }
+         function showConfirm()
+          {
+              const answer = window.confirm('do you want a break?')
+             if(answer)
+             {
+                 console.log('let take a break of 10 min')
+             }
+             else
+             {
+                 console.log('continue ')
+             }
+          }
+
+     </script>
+    </body>
+</html>

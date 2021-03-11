@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page3</title>
+</head>
+<body>
+  <h1>Popups Demo</h1>
+
+  <button onclick="showAlert()">show alert</button>
+  <button onclick="showPrompt()">show Prompt</button>
+  <button onclick="showConfirmation()">show confirmation</button>
+
+  <script>
+
+    function showAlert() {
+      // window.alert('this is an alert')
+
+      alert('this is an alert')
+    }
+
+
+    function showPrompt() {
+      const username = window.prompt("Enter your name")
+      console.log("user name = " + username)
+    }
+
+    function showConfirmation() {
+      const answer = window.confirm("Do you want to have break?")
+      // if (answer == true) {
+      if (answer) {
+        console.log('lets take a break of 10 minutes')
+      } else {
+        console.log('lets continue')
+      }
+    }
+
+  </script>
+</body>
+</html>

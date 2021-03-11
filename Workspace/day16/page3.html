@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page3</title>
+
+  <style>
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn {
+      border: orange 1px solid;
+      border-radius: 5px;
+      background-color: #7353AD;
+      color: orange;
+      height: 40px;
+      width: 100px;
+    }
+
+    .btn:hover {
+      background-color: orange;
+      color: #7353AD;
+    }
+
+
+    /* execute on the desktop devices */      
+    @media screen and (min-width: 768px) {
+
+      body {
+        background-color: skyblue;
+      }
+
+      .btn {
+        display: inline-block;
+      }
+
+      ul.menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: green;
+
+      }
+
+      ul li {
+        display: inline-block;
+      }
+
+      ul li a {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 19px;
+      }
+
+    }
+
+
+    /* execute on the mobile devices */
+    @media screen and (max-width: 768px) {
+      
+      body {
+        background-color: red;
+      }
+
+      .btn {
+        display: none;
+      }
+
+      ul.menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: white 2px solid;
+        border-radius: 10px;
+      }
+
+      ul li a {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: black;
+        background-color: palegoldenrod;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>CSS Media query demo updated</h1>
+
+  <button class="btn">Download</button>
+
+  <ul class="menu">
+    <li><a href="#">menu 1</a></li>
+    <li><a href="#">menu 2</a></li>
+    <li><a href="#">menu 3</a></li>
+    <li><a href="#">menu 4</a></li>
+    <li><a href="#">menu 5</a></li>
+  </ul>
+</body>
+</html>

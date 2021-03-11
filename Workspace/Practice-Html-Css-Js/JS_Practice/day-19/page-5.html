@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> page-5 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+
+         #user-info
+         {
+             border: black 1px solid;
+         }
+        </style>
+       
+    </head>
+    <body>
+
+        <div class="container">
+
+         <div class="col-md-6">
+          <h2>User Registeration form</h2>
+           <div class="form">
+               <div class="form-group">
+               <label for="f-name">FirstName</label>
+               <input type="text" name="" id="f-name" placeholder="enter name">
+               </div>
+               <div class="form-group">
+                <label for="l-name">LastName</label>
+                <input type="text" name="" id="l-name" placeholder="enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="b-date">Birth-date</label>
+                        <input type="date" name="" id="b-date" placeholder="enter birthdate">
+                        </div>
+                        <div class="form-group">
+                            <button onclick="registeration()" class="btn btn-success" > Submit</button>
+                            <button onclick="clearForm()"  class="btn btn-danger "> Clear </button>
+                        </div>
+           </div>
+         </div>
+
+           <div class="col-md-6">
+               <h2>User Info </h2>
+               <div id="user-info"></div>
+           </div>
+
+
+        </div>
+
+        <script>
+
+            function registeration()
+            {
+                const firstName = document.getElementById('f-name').value 
+                const lastName = document.getElementById('l-name').value
+                const Email = document.getElementById('email').value
+                const bDate = document.getElementById('b-date').value
+                  
+                document.getElementById('user-info').innerHTML = `  First Name : ${firstName} <br>
+                              Last Name : ${lastName} <br>
+                              email : ${Email} <br> 
+                              birthdate : ${bDate} <br>     `
+
+            }
+          
+            function clearForm()
+            {
+               
+               document.getElementById('f-name').value = ''
+               document.getElementById('l-name').value = ''
+               document.getElementById('email').value = ''
+               document.getElementById('b-date').value = ''
+               document.getElementById('user-info').innerHTML = `  First Name : <br>
+                              Last Name :  <br>
+                              email :  <br> 
+                              birthdate :  <br>     `
+
+    
+            }
+        </script>
+    
+    </body>
+</html>

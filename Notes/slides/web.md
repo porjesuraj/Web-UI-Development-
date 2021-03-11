@@ -1,0 +1,141 @@
+## Web architecture
+
+### client
+
+- machine which is having the browser installed
+- the user who is using the browser for browsing the website
+- e.g.
+  - desktop
+  - mobile
+
+### browser
+
+- a special application which is used to browse websites
+- uses URL to browse a website
+  - **URL**
+    - stands for Uniform Resource Locator
+    - resource: any file that is hosted (copied) on the server machine
+    - e.g.
+      - https://www.google.co.in/
+      - http://192.168.0.2/
+      - http://mywebsite:8080/
+      - http://mywebsite:8080/myfile.html
+      - http://mywebsite:8080/myfile.php?firstname=user1&address=pune
+      - https://mywebsite#top
+
+    - every url follows a pattern
+    - components
+      - **scheme**
+        - the protocol that will be used while communication
+        - e.g. http, https, file, ftp
+        - optional, if missing then the default is http
+      - **domain name or IP address**
+        - the way to find the machine uniquely over the network
+        - e.g.
+          - google.com, apple.com
+          - 172.217.166.46
+        - mandatory
+      - **port number**
+        - port number of the web server running on the server machine
+        - option, if missing by default
+          - 80 for http
+          - 443 for https
+      - **path or file name**
+        - file name of path of the resource
+        - optional, if missing the startup/index page will be fetched
+      - **query string**
+        - used to pass input values to the website
+        - it always starts with ?
+        - it always will be present in key-value pairs collection format
+        - e.g.
+          - ?firstname=user1&address=pune
+        - in the above query string
+          - firstname and address are the keys
+          - user1 and pune are the values
+        - optional
+      - **hash component**
+        - is also known as proxy component
+        - used for linking different sections of the page
+        - optional
+- creates HTTP request object
+  - cotains the information needs to be sent to the server
+  - has
+    - header
+      - key-value pairs
+    - body
+      - query string when the method is not GET
+
+### server
+
+- machine which serves a request
+- server is not a hardware rather server is a software
+- types
+  - **web server**
+    - server which serves the web (http and https) requests
+    - e.g.
+      - apache2
+      - IIS (internet information service)
+      - glassfish
+      - express
+  - **database server**
+    - server which persists the data
+    - types
+      - RDBMS: MySQL, PostgreSQL, Oracle, MS SQL Server, DB2 etc.
+      - NoSQL: MongoDB, Firebase, CouchBase, Hive, HBase etc.
+  - **file server**
+    - server which is used to share the files with others
+    - e.g.
+      - NFS: network file system
+- contains
+  - web stack
+    - contains
+      - web server
+      - database
+      - language
+      - platform
+    - e.g.
+      - LAMP: Linux/Windows/macOS + Apache + MySQL + PHP/Perl/Python
+      - MEAN: Mongo + Express + Angular + Node
+      - MERN: Mongo + Express + React + Node
+      - WISA: Windows + IIS + SQL Server + ASP.net
+
+- creates HTTP response
+  - object created to return the contents of requested resource
+  - contains
+    - header
+      - collection of key-value pairs
+    - body
+      - contents of requested resouce
+- status code
+  - used to represent the status of server's execution
+  - types
+    - **1xx**
+      - repsents the debugging or informational messages
+      - e.g.
+        - 100: continue
+        - 101: Switching Protocols
+    - **2xx**
+      - represents success
+      - e.g.
+        - 200: OK
+        - 201: Created
+        - 202: Accepted
+    - **3xx**
+      - represents the redirection
+      - e.g.
+        - 300: Multiple Choices
+        - 301: Moved Permanently
+    - **4xx**
+      - represents the client error
+      - e.g.
+        - 400: bad request
+        - 401: Unauthorized
+        - 402: Payment Required
+        - 403: Forbidden
+        - 404: Not Found
+    - **5xx**
+      - represents the server side error
+      - e.g.
+        - 500: Internal Server Error
+        - 501: Not Implemented
+        - 502: Bad Gateway

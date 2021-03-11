@@ -1,0 +1,10 @@
+<!DOCTYPE person [
+  <!ELEMENT person ((name | address), phone)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+  <!ELEMENT phone (#PCDATA)>
+]>
+<person>
+  <name>person1</name>
+  <phone>342243</phone>
+</person>

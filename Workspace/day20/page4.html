@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page4</title>
+</head>
+<body>
+
+  <script>
+
+
+    function function1(p1) {
+      // p1 = myFunction2 or function2
+      console.log('inside function1')
+      console.log(p1)
+      console.log(`type of p1 = ${typeof(p1)}`)
+
+      console.log('calling p1')
+      p1()
+    }
+
+    function function2() {
+      console.log('inside function2')
+    }
+
+    // function alias
+    // variable to a function
+    const myFunction2 = function2
+
+    // function2()
+    // myFunction2()
+
+    // undefined
+    // function1()
+
+    // number
+    // function1(10)
+
+    // string
+    // function1("test")
+
+    // boolean
+    // function1(true)
+
+    // function1(myFunction2)
+
+    function1(function2)
+
+
+  </script>
+  
+</body>
+</html>

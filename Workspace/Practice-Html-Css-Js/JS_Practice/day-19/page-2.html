@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1  >html + js demp</h1>
+    <h2>THis is a header 2</h2>
+    <h3>this is header 3</h3>
+    <button onclick="printHello()"> click me</button>
+
+    <script>
+           //cick : event
+           //printHello(): event Handler
+        function printHello()
+        {
+            //console.log(`hello from JS`)
+            console.log(document)
+
+            //get object(s) of h1 element(s)
+            const arrayH1 = document.getElementsByTagName('h1') 
+            const h1Hello = arrayH1[0]
+            //console.log(h1Hello)
+            //change the text of h1 to "welcome to JS"
+            h1Hello.innerHTML = "Welcome to JS"
+ // first get h2 type element 
+ // assign array zero element to h2 const 
+ //use innerhtml 
+            const arrayH2 = document.getElementsByTagName('h2')
+            const h2 = arrayH2[0]
+            h2.innerHTML = "message is changed"
+
+            const arrayH3 = document.getElementsByTagName('h3')
+            const h3 = arrayH3[0]
+            h3.innerHTML = "message is changed again"
+        }
+
+    </script>
+    </body>
+</html>

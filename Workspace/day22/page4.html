@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page4</title>
+</head>
+<body>
+  <h1>JS Timing functions</h1>
+
+  <button onclick="showMessageAfterDelay()">show message 1</button>
+  <button onclick="showMesssageAfterEvery5Seconds()">show message 2</button>
+
+  <script>
+
+    function showMessage() {
+      console.log('this is a message')
+    }
+
+    function showMessageAfterDelay() {
+      // showMessage()
+
+      console.log('the alert will be shown after 5 seconds')
+
+      // add a 5 seconds delay
+      setTimeout(showMessage, 5000)
+    }
+
+    function showMesssageAfterEvery5Seconds() {
+      
+      // call the showMessage every after 5 seconds
+      setInterval(showMessage, 5000)
+    }
+    
+
+  </script>
+</body>
+</html>

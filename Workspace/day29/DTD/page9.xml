@@ -1,0 +1,36 @@
+<!DOCTYPE cars [
+  <!ELEMENT cars (car+)>
+
+  <!ELEMENT car (model, company, price, configuration)>
+  <!ELEMENT model (#PCDATA)>
+  <!ELEMENT company (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+
+  <!ELEMENT configuration (color, engine, fuel)>
+  <!ELEMENT color (#PCDATA)>
+  <!ELEMENT engine (#PCDATA)>
+  <!ELEMENT fuel (#PCDATA)>
+]>
+
+<cars>
+  <car>
+    <model>i20</model>
+    <company>hyundai</company>
+    <price>7.5</price>
+    <configuration>
+      <color>space gray</color>
+      <engine>v12</engine>
+      <fuel>petrol</fuel>
+    </configuration>
+  </car>
+  <car>
+    <model>nano</model>
+    <company>tata</company>
+    <price>2.5</price>
+    <configuration>
+      <color>yellow</color>
+      <engine>v6</engine>
+      <fuel>petrol</fuel>
+    </configuration>
+  </car>
+</cars>

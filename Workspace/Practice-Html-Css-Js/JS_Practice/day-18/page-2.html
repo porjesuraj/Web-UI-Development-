@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <script>
+
+        function add(num1,num2)
+        {
+            const addition = num1 + num2
+            console.log(`addition of ${num1} and ${num2} = ${addition}`) 
+        }
+         function sub(num1,num2)
+         {
+             
+            const substraction = num1 - num2
+            console.log(`sub of ${num1} and ${num2} = ${substraction}` )
+         }
+         function multi(num1,num2)
+         {
+            const multiplication= num1 * num2
+            console.log(`multi of ${num1} and ${num2} = ${multiplication}` )
+         }
+         function div(num1,num2)
+         {
+            const division = num1 / num2
+            console.log(`div of ${num1} and ${num2} = ${division}` )
+             
+         }
+         function mod(num1,num2)
+         {
+             console.log(`modulus of ${num1} and ${num2} = ${num1 % num2}`)
+         }
+
+         function execute(func)
+         {
+             console.log(`executing func`)
+             func(10,20)
+             func(20,30)
+             func(50,60)
+             func(70,80)
+         }
+
+         execute(add)
+         execute(sub)
+         execute(multi)
+         execute(div)
+         execute(mod)
+
+
+
+
+
+
+
+        /* add(10,20)
+         sub(10,20)
+         multi(10,20)
+         div(10,20)
+
+         add(30,40)
+         sub(30,40)
+         multi(30,40)
+         div(30,40)
+
+         add(50,60)
+         sub(50,60)
+         multi(50,60)
+         div(50,60)
+
+         add(70,80)
+         sub(70,80)
+         multi(70,80)
+         div(70,80)
+       */
+         
+         
+
+        </script>
+    
+    </body>
+</html>

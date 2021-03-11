@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="result-h1">Welcome</h1>
+        <div>
+            First Name : <input type="text" name="" id="first-name" placeholder="enter your name">
+            
+     
+        </div>
+        <div>
+           Last Name : <input type="text" name="" id="last-name" placeholder="enter your last name">
+            
+     
+        </div>
+        <div>
+            Email : <input type="email" name="" id="email" placeholder="enter your email">
+           
+        </div>
+        <div>
+            Phone.no: <input type="tel" name="" id="phone" placeholder="enter your phone no">
+           
+     
+        </div>
+        <div id="result-div"></div>
+        <button onclick="greetUser()">greet user</button>
+       
+       <script>
+
+          function greetUser()
+          {
+
+              //get input from user
+             
+
+              const inputFirstName = document.getElementById('first-name')
+              const firstName = inputFirstName.value
+              console.log(`first name = ${firstName}`)
+
+              const inputLastName = document.getElementById(`last-name`)
+              const lastName = inputLastName.value
+              console.log(`last name = ${lastName}`)
+
+              const inputEmail = document.getElementById('email')
+              const emailId = inputEmail.value
+              console.log(`Email: ${emailId}`)
+
+              const inputPhone = document.getElementById(`phone`)
+              const Phone = inputPhone.value
+              console.log(`Phone : ${Phone}`)
+
+
+
+             
+
+              const form = document.getElementById('result-div')
+             // form.innerHTML = "first name :" + firstName + "<br>"+ "last name : " +  lastName +"<br>" + "Email-id : "+ emailId + "<br>" + "Phone no : "+ Phone + "<br>"
+               form.innerHTML += "first name :" + firstName + "<br>"
+               form.innerHTML += "last name : " +  lastName +"<br>"
+               form.innerHTML += "Email-id : "+ emailId + "<Br>"
+               form.innerHTML += "Phone no : "+ Phone + "<br>"
+
+               
+          }
+
+       </script>
+    </body>
+</html>

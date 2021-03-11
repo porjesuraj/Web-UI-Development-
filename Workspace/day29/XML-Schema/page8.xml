@@ -1,0 +1,15 @@
+<persons
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="page8.xsd">
+  
+  <person>
+    <name>person1</name>
+    <age>40</age>
+  </person>
+  
+  <person>
+    <name>person2</name>
+    <age>60</age>
+  </person>
+
+</persons>
